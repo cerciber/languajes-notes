@@ -1,0 +1,1 @@
+(entdel (vlax-vla-object->ename objeto))

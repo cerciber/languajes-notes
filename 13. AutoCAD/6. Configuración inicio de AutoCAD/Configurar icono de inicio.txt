@@ -1,0 +1,15 @@
+- Crear acceso directo de AutoCAD
+- Click derecho
+- Propiedades
+	- Acceso directo
+		- Iniciar en (Seleccionar la ruta de inicio)
+		- Destino 
+			- Ubicar el cursos justo depues de (acad.exe")
+			- Entre comillas escribir los nombres de los dibujos que se desee abrir
+			- Escribir -b 
+			- Escribir "C:nombre.scr" donde nombre es el nombre del SCRIPT que se desea ejecutar
+			- Dejar el resto de la ruta como estaba
+
+			Ejemplo ("C:\Program Files\Autodesk\AutoCAD 2017\acad.exe" "Dibujo.dwg" -b "C:script.scr" /product ACAD /language "es-ES")
+
+			(Si hay un archivo acad.lsp AutoCAD lo ejecuta automaticamente)

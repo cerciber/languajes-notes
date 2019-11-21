@@ -1,0 +1,42 @@
+_ATTDEF = agregar atributos
+_ATREDIT = modificar atributos
+_BASE = Definir punto base del dibujo
+
+_ATTEXT = extraccion de atributos en distintos formatos
+
+	- CSV = Delimitado por comas
+	- SDF = Delimitado por espacios
+
+	- Formato de la plantilla de extracción
+
+		- Identificador del atributo (IDENTIFICADOR)
+
+			IDENTIFICADOR = Atributo definido por el usuario
+			BL:X = Posicion en X
+			BL:Y = Posicion en Y
+			BL:Z = Posicion en Z
+			BL:ORIENT = Orientacion
+			BL:XSCALE = Escala en X
+			BL:XSCALE = Escala en Y
+			BL:XSCALE = Escala en Z
+
+		- Tipo de dato (T)
+
+			c = caracter
+			n = numerico
+
+		- Numero de caracteres (XXX)
+		- Numero de decimales (YYY)
+
+		////////////////////////////////
+		IDENTIFICADOR1 		TXXXYYY
+		IDENTIFICADOR2 		TXXXYYY
+		IDENTIFICADOR3 		TXXXYYY
+		...
+		IDENTIFICADORN 		TXXXYYY
+		BL:X 		n010004
+		BL:Y 		n010004
+		BL:Z 		n010004
+		BL:ORIENT	n010004
+
+		////////////////////////////////

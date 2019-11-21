@@ -1,0 +1,25 @@
+* Crear bloque
+
+	; Bloque "nombre del bloque" "Entidad 1" "Entidad 2" ... "Enter"
+	(command "_BLOCK" "nombre bloque" punto entidad1 entidad2 ... "")
+
+* Deshacer bloque
+	
+	; EXPLOTAR "nombre de entidad"
+	(command "_explode" entityname)
+
+* Insertar plancha como bloque
+
+	; Desactivar activacion de ventanas
+	(command "_ATTDIA" 0)
+
+	; INSERTAR "nombre del bloque" "punto base" "escala en x" "escala en y" "angulo de rotacion " "atributo1" "atributo2" ...
+	(command "_insert" bloque (list x y z) escalaX escalaY rotacion atributo1 atributo2 ...)
+
+	; Activar activacion de ventanas
+	(command "_ATTDIA" 1)
+
+* Extraer bloque como plancha externa
+
+	; WBLOQUE "nombre del archivo" "Nombre del bloque"
+	(command "_WBlock" "silla2" "Silla")

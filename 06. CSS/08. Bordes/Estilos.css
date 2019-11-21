@@ -1,0 +1,71 @@
+#div1 {
+	/* Borde de puntos */
+    border-style: dotted;
+}
+#div2 {
+	/* Borde de lineas cortadas */
+    border-style: dashed;
+}
+#div3 {
+	/* Borde continuo */
+    border-style: solid;
+}
+#div4 {
+	/* Borde doble */
+    border-style: double;
+}
+#div5 {
+	/* Borde ancaldo 3D */
+    border-style: groove;
+}
+#div6 {
+	/* Borde borde estriado 3D */
+    border-style: ridge;
+}
+#div7 {
+	/* Borde insertado 3D */
+    border-style: inset;
+}
+#div8 {
+	/* Borde sobresalido 3D */
+    border-style: outset;
+}
+#div9 {
+	/* Sin borde */
+    border-style: none ;
+}
+#div10 {
+	/* Borde oculto */
+    border-style: hidden;
+}
+#div11 {
+	/* Borde mixto */
+    border-style: dotted dashed solid double;
+}
+#div12 {
+	/* Ancho de borde */
+    border-style: solid;
+    border-width: 5px;
+}
+#div13 {
+	/* Ancho de bordes individuales */
+    border-style: solid;
+    border-width: 2px 10px 4px 20px;
+}
+#div14 {
+	/* Color de bordes */
+    border-style: solid;
+    border-color: red green blue yellow;
+}
+#div15 {
+	/* Borde de lados individuales */
+    border-top-style: dotted;
+    border-right-style: solid;
+    border-bottom-style: dotted;
+    border-left-style: solid;
+}
+#div16 {
+	/* Bordes redondeados */
+	border-style: solid;
+    border-radius: 5px;
+}

@@ -1,0 +1,56 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-1.11.0.min.js"> </script>
+		<script> 
+		
+			$(document).on('ready', function(){
+
+				/* Click del ratón en el elemento */
+				$("#boton1").click(function(){
+
+					$("#parrafo1").text("Se ha presionado el boton");
+
+				});
+
+				/* Pasar el raton sobre el elemento*/
+				$("#boton2").mouseover(function(){
+
+					$("#parrafo2").text("Se ha pasado el raton sobre el boton");
+
+				});
+
+				/* Pasar desplazar el mouse fuera del elemento*/
+				$("#boton2").mouseout(function(){
+
+					$("#parrafo2").text("Se ha desplazado el raton fuera del boton");
+
+				});
+
+				/* Foco del elemento*/
+				$("#boton3").focus(function(){
+
+					$("#parrafo3").text("El boton tiene el foco");
+
+				});
+
+				/* Perdida de foco del elemento*/
+				$("#boton3").blur(function(){
+
+					$("#parrafo3").text("El boton ya no tiene el foco");
+
+				});
+
+			});
+
+		</script>
+	</head>
+<body>
+	<input id="boton1" type="button" value="boton">
+	<p id="parrafo1"></p>
+	<input id="boton2" type="button" value="boton">
+	<p id="parrafo2"></p>
+	<input id="boton3" type="button" value="boton">
+	<p id="parrafo3"></p>
+</body> 

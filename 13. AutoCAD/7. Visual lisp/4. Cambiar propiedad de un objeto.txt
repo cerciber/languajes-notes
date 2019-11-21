@@ -1,0 +1,1 @@
+(vlax-put-property objeto nombrePropiedad propiedad)

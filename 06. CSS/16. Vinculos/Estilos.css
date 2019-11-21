@@ -1,0 +1,19 @@
+/* Vinculo sin visitar */
+a:link {
+    color: red;
+}
+
+/* Vinculo visitado */
+a:visited {
+    color: green;
+}
+
+/* Vinculo cuando el mouse se desplaza sobre el */
+a:hover {
+    color: hotpink;
+}
+
+/* Vinculo cuando el mouse hace click sobre el */
+a:active {
+    color: blue;
+}

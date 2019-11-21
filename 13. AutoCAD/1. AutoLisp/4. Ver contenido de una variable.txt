@@ -1,0 +1,1 @@
+!variable = mirar contendio de una variable

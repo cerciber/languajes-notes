@@ -1,0 +1,35 @@
+* Crear arreglo
+
+	(vlax-make-safearray tipoDeDato (CONS inicio fin) )
+
+		tipoDeDato:
+
+			vlax-vbInteger = Entero
+			vlax-vbLong	= Entero largo 
+			vlax-vbSingle = número de coma flotante de precisión simple
+			vlax-vbDouble = número de coma flotante de doble precisión
+			vlax-vbString = Cadena de texto
+			vlax-vbObject = Objeto
+			vlax-vbBoolean = Booleano
+			vlax-vbVariant = Variante
+
+		inicio:
+
+			Limite inferior
+
+		fin: 
+			Limite superior
+
+(vlax-safearray->list arreglo) = convertir arreglo a lista de autoLisp
+
+(vlax-safearray-fill arreglo (LIST valor1 valor2 ...)) = Asignar valores al arreglo llenandolo todo
+
+(vlax-safearray-put-element arreglo posicion valor ) =  Asignar valores al arreglo por posicion
+
+(vlax-safearray-get-element arreglo valor) = Obtener valores del arreglo
+
+(vlax-safearray-get-l-bound arreglo numDimension) = Obtener primer indice del arreglo en la dimension especificada
+
+(vlax-safearray-get-u-bound arreglo numDimension) = Obtener ultimo indice del arreglo en la dimension especificada
+
+(vlax-safearray-get-dim arreglo) = Obtener el numero de dimesiones

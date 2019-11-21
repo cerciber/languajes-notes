@@ -1,0 +1,5 @@
+(vlax-read-enabled-p objeto) = Comprueba si se puede leer un objeto
+
+(vlax-write-enabled-p) = Comprueba si se puede modificar un objeto
+
+(vlax-erased-p) = Comprueba si un objeto ha sido borrado

@@ -1,0 +1,18 @@
+#div1 {
+	/* Altura y anchura */
+    height: 60px;
+    width: 40px;
+    border-style: solid;
+}
+#div2 {
+	/* Altura y anchura maxima */
+    max-width: 600px;
+    max-height: 400px;
+    border-style: solid;
+}
+#div3 {
+	/* Altura y anchura minima */
+    min-width: 600px;
+    min-height: 400px;
+    border-style: solid;
+}

@@ -1,0 +1,6 @@
+_BLOCK = Crear bloque
+_Insert = Insertar bloques o planchas como bloques
+_BASE = Definir punto base del dibujo
+_explode = Deshacer bloque
+_WBlock = escojer un bloque del dibujo y convertirlo en plancha externa
+_ATTACH = Abrir archivo de dibujo y enlazarlo como bloque

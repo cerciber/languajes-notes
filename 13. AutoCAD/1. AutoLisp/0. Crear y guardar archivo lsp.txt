@@ -1,0 +1,6 @@
+Crear archivo .lsp
+	- Abrir un nuevo archivo de Bloc de notas
+	- Peguar el código
+	- Guardar la nueva extensión .lsp. 
+Cargar archivo .lsp
+	- Usar comando APPLOAD

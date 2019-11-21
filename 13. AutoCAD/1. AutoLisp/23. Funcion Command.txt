@@ -1,0 +1,1 @@
+(COMMAND <"nombre de la orden"> [argumentos válidos]...) =  evalúa los distintos argumentos y los envía a AutoCAD

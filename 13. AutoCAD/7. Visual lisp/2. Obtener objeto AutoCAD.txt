@@ -1,0 +1,1 @@
+(vlax-get-acad-object)

@@ -1,0 +1,25 @@
+\documentclass[a4paper]{article}
+\usepackage[opcion]{paquete}
+
+\title{Titulo} 
+\author{autor} 
+\date{fecha}
+
+\begin{document} 
+
+	% Entorno align = alinea las operaciones adecuadamente cuando es muy larga 
+	\begin{align}
+		primer miembro = segundo miembro
+	\end{align}
+
+	% Entorno gather = se usa para centrar en lıneas separadas dos o mas ecuaciones
+	\begin{gather}
+		primer miembro = segundo miembro
+	\end{gather}
+
+	% Entorno alignat = junta el numero especificado de columnas align en una sola fila
+	\begin{alignat}{numero de columnas}
+		primer miembro = segundo miembro
+	\end{alignat}
+
+\end{document} 

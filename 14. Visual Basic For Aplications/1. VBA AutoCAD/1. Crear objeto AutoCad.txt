@@ -1,0 +1,6 @@
+'Crear aplicacion
+Dim acadApp As AcadApplication
+Set acadApp = New AcadApplication
+
+' Dar visibilidad
+acadApp.Visible = True

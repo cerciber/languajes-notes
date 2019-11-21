@@ -1,0 +1,94 @@
+Bloques
+
+	50 = Angulo de rotacion
+	10 = Punto base
+
+Circulo
+
+	0 = Identificador
+	10 = centro
+	40 = radio
+	62 = color
+
+	; Crear circulo 
+	(entmake (list
+		(CONS 0 "CIRCLE")
+	    (list 10 centroX centroY centroZ)
+	    (CONS 40 radio) 
+	    (CONS 62 color)) 
+	)
+
+Linea
+
+	0 = Identificador
+	10 = punto inicial
+	11 = punto final
+	62 = color
+
+	;Crear linea
+	(entmake (
+		(CONS 0 "LINE") 
+	    (LIST 10 inicioX inicioY inicioZ) 
+	    (LIST 11 finX finY finZ)
+	    (CONS 62 color)) 
+	)
+
+Linea auxiliar
+
+	0 = Identificador
+	10 = punto inicial
+	11 = punto final
+	62 = color
+	100 = Marcador de subclase
+
+	;Crear linea auxiliar
+	(entmake (
+		(CONS 0 "XLINE") 
+		(CONS 100 "AcDbEntity") 
+		(CONS 100 "AcDbXline") 
+		(LIST 10 inicioX inicioY inicioZ)  
+		(LIST 11 finX finY finZ)
+		(CONS 62 color))
+	)
+
+Arco de circunferencia 
+
+	0 = Identificador
+	10 = punto inicial
+	40 = radio
+	50 = angulo inicial
+	51 = angulo final
+	62 = color
+
+	; Arco de circunferencia
+	(entmake (
+			(CONS 0 "ARC") 
+			(LIST 10 inicioX inicioY inicioZ) 
+			(CONS 40 radio) 
+			(CONS 50 angulo_inicial) 
+			(CONS 51 angulo_final)
+			(CONS 62 color))
+	)
+
+Linea SP
+
+	0 = Identificador
+	11 = puntos base
+	62 = color
+	70 = grado de la curva
+	100 = Marcador de subclase
+
+	; Crear Linea SP
+	(entmake (
+			(CONS 0 "SPLINE") 
+			(CONS 100 "AcDbEntity") 
+			(CONS 100 "AcDbSpline")  
+			(CONS 71 <grado>) 
+
+			(LIST 11 <punto1X> <punto1Y> <punto1Z>) 
+			(LIST 11 <punto2X> <punto2Y> <punto2Z>) 
+			(LIST 11 <punto3X> <punto3Y> <punto3Z>) 
+			...
+
+		)
+	)

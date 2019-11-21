@@ -1,0 +1,10 @@
+﻿(DEFUN <nombre> <( [lista-argumentos][ / símbolos locales])> [expr] ...) = Crear una función
+
+	Nombre: el nombre de la función o de la orden que se está creando
+	
+	Lista-argumentos: una lista con los argumentos, que puede estar seguida por una barra oblicua
+	y los nombres de uno o más símbolos locales para la función.
+
+	Argumentos: variables que toman valor en la llamada a la función
+	
+	Símbolos locales: variables que sólo tienen valor en la función que se define que no afecta a la variables globales. 

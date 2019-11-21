@@ -1,0 +1,1 @@
+(setq variable nil) = vaciar variable

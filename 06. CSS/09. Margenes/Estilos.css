@@ -1,0 +1,19 @@
+#div1 {
+	/* Margenes individuales */
+    margin-top: 10px;
+    margin-bottom:20px;
+    margin-right: 150px;
+    margin-left: 50px;
+    border-style: solid;
+}
+#div2 {
+	/* Margenes abreviadas */
+    margin: 10px 150px 20px 50px;
+    border-style: solid;
+}
+#div3 {
+	/* Centrado horizontalmente */
+    margin: auto;
+    border-style: solid;
+    width: 300px;
+}

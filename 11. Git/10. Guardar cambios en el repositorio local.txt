@@ -1,0 +1,8 @@
+# Agregamos todo (archivos y directorios) al repositorio
+git add .
+
+# O agregamos un archivo al repositorio
+git add 'nombre del archivo o carpeta'
+
+# Hacemos un commit al repositorio
+git commit -m "Initial commit"

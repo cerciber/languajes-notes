@@ -1,0 +1,1 @@
+(setq variable1 valor1 variable2 valor2 variable3 valor3 ...) = asignar valores a las variables

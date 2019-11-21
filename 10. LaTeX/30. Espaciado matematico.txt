@@ -1,0 +1,14 @@
+\documentclass[a4paper]{article}
+\usepackage[opcion]{paquete}
+
+\title{Titulo} 
+\author{autor} 
+\date{fecha}
+
+\begin{document} 
+
+	\smallskip % Espacio de linea pequeño %
+	\medskip % Espacio de linea mediano %
+	\bigskip % Espacio de linea grande %
+	
+\end{document} 

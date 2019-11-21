@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <!-- android:layout_margin = longitud de margen exterior de todos los lados -->
+    <!-- android:layout_marginBottom = longitud de margen exterior del lado inferior -->
+    <!-- android:layout_marginTop = longitud de margen exterior del lado superior -->
+    <!-- android:layout_marginLeft = longitud de margen exterior del lado izquierdo -->
+    <!-- android:layout_marginRight = longitud de margen exterior del lado derecho -->
+
+    <Button android:id="@+id/TxtDato1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_margin="20px"/>
+
+    <Button android:id="@+id/TxtDato2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:layout_marginBottom="20px"
+        android:layout_marginTop="10px"
+        android:layout_marginLeft="5px"
+        android:layout_marginRight="20px"/>
+ 
+</LinearLayout>

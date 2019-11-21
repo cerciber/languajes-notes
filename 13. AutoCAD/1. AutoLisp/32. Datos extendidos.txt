@@ -1,0 +1,56 @@
+(entget objeto (list "*")) = seleccionar propiedades del objeto con todas las propiedades extendidas
+(entget objeto (list "propiedad")) = seleccionar propiedades del objeto con las propiedades especificadas
+(regapp "Nombre del conjunto de datos") = registrar el nombre del conjunto de datos
+
+* Asignar datos extendidos a un elemento
+
+	(defun crear (objeto nombre DFX valor)
+
+		(SETQ datosObjeto (ENTGET objeto (list "*")))
+		(regapp nombre)
+		(setq datos (LIST (LIST -3 (LIST nombre (CONS DFX valor)))))
+		(ENTMOD (APPEND datosObjeto datos))
+
+	)
+
+* Obtener datos extendidos de un elemento
+
+	(defun obtener(objeto nombre)
+
+		(SETQ datosObjeto (ENTGET objeto (list nombre)))
+		(SETQ resultado (LAST (ASSOC -3 datosObjeto)))
+		(SETQ resultado (cdr(last resultado)))
+
+	)
+
+* Editar datos extendidos a un elemento
+
+	(defun editar(objeto nombre DFX valor)
+
+		(SETQ datosObjeto (ENTGET objeto (list "*")))
+		(setq datos (cdr (ASSOC -3 datosObjeto)))
+		(setq datos (SUBST (LIST nombre (CONS DFX valor)) (ASSOC nombre datos) datos))
+		(setq datos (CONS -3 datos))
+		(ENTMOD (SUBST datos (ASSOC -3 datosObjeto) datosObjeto ))
+
+	)
+
+* Códigos DXF de los tipod de datos
+
+	Código DXF:			Tipo de Dato:				Observaciones:
+
+	1000				Cadena de Texto				Hasta 255 bytes de longitud
+	1001				Nombre de aplicación 		Hasta 31 bytes de longitud
+	1003				Nombre de Capa
+	1005				Identificador de entidad
+	1010				Valor de Punto 3D			3 números reales
+	1040				Número Real 				Valor de coma flotante
+	1070				Número Entero				Entero de 16 bits (con o sin signo)
+	1071 				Entero Largo				Entero de 32 bits con signo (gestionable por aplicaciones ARX)
+	1002				Cadena de Control			"{" ó "}" permite a la aplicación agrupar los datos como listas.
+	1004				Chunks de Datos Binarios	Hasta 127 bytes (gestionable por aplicaciones ARX)
+	1011				Posición en el SCU			Se actualiza al transformar la entidad propietaria.
+	1012				Desplazamiento en SCU		Se escala, gira o refleja pero no se estira ni se desplaza.
+	1013				Dirección en el SCU			Vector unitario girado o reflejado, no se escala, estira o desplaza.
+	1041				Distancia					Se escala igual que la entidad propietaria
+	1042				Factor de Escala 			Se actualiza al transformar la entidad propietaria.

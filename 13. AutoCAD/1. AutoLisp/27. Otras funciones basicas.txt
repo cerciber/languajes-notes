@@ -1,0 +1,7 @@
+(EVAL <expresión>) = Evalua expresiones
+
+(QUOTE <expresión>) = Procesa una instrucción sin evaluarla
+
+(NULL <expresión>) = Comprueba si una expresión se evalúa como nulo
+
+(QUIT) = Fuerza a la rutina actual a abandonar el procesamiento.

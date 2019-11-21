@@ -1,0 +1,1 @@
+(command "_delay" tiempo) = pausar programa en el tiempo especificado en segundos

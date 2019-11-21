@@ -1,0 +1,28 @@
+/* listado con circulos */
+ul.list1 {
+    list-style-type: circle;
+}
+/* listado con cuadros */
+ul.list2 {
+    list-style-type: square;
+}
+/* listado con Numeros Romanos en Mayusculas */
+ol.list3 {
+    list-style-type: upper-roman;
+}
+/* listado con letras en minusculas */
+ol.list4 {
+    list-style-type: lower-alpha;
+}
+/* listado con imagen */
+ul.list5 {
+    list-style-image: url('Imagen.png');
+}
+/* Marca dentro del flujo de contenido */
+ul.list6 {
+    list-style-position:inside;
+}
+/* Marca fuera del flujo de contenido */
+ul.list7 {
+    list-style-position:outside;
+}

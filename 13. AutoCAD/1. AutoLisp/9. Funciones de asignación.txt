@@ -1,0 +1,14 @@
+(SETQ simbolo expresion) = Liga el nombre de símbolos al valor de una expresión 
+(SETVAR variable expresion) = Cambia el valor de variables del sistema
+
+(TIPE elemeto) = Devuelve el tipo de dato como cadena
+	REAL: numero entero
+	FILE: descriptor de fichero
+	STR: cadenas
+	INT: numero entero.
+	SYM: símbolos
+	LIST: listas y funciones de usuario
+	SUBR: funciones internas
+	PICKSET: Conjuntos de selección
+	ENAME: Nombres de entidades 
+

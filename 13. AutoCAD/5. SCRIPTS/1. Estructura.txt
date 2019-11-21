@@ -1,0 +1,3 @@
+- Archivo con extencion .scr
+- Ingresan funciones tal como si se hicieran en la linea de comandos
+- Los saltos de linea y espacios cuentan como Enter

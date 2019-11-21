@@ -1,0 +1,29 @@
+(SSLENGTH <conjunto designado> ) = Devuelve el número entero correspondiente al número de entidades del conjunto designado
+										indicado. 
+
+(SSMEMB <nombre_entidad> <conjunto seleccion>) = Comprueba si un objeto (entidad) forma parte de un conjunto de selección.
+								Si la entidad forma parte del conjunto, devuelve su nombre (nombre_ent). 
+								En caso contrario, devuelve nil. 
+
+(SSADD <nombre_entidad> <conjunto seleccion>) = Añade un objeto (entidad) a un conjunto de selección o crea un conjunto de 
+												selección nuevo
+
+(SSDEL <nombre_ent> <cs>) = Suprime un objeto (entidad) de un conjunto de selección
+
+(ENTGET < nombre de entidad> ) = Busca en la base de datos la entidad cuyo nombre se proporciona y devuelve una lista con los	
+									datos de su definición (registro de entidad)
+
+(ENTLAST) = Devuelve el nombre del último objeto principal (entidad) no suprimido del dibujo 
+
+(ENTNEXT [nombre_ent]) = Devuelve el nombre del objeto (entidad) no suprimido siguiente al objeto especificado
+							Si no tiene paramentro devuelve el nombre del primer objeto
+
+(ENTSEL [mensaje]) = Solicita al usuario la designación de un único objeto (entidad) mediante la especificación de un punto. 
+
+(ENTDEL nombre_ent) = Suprime objetos (entidades) o recupera los objetos eliminados anteriormente 
+
+(ENTMAKE [lista_ent]) = Crea una nueva entidad (objeto gráfico) en el dibujo
+
+(ENTMOD <lista_ent>) = Modificar la identidad especificada en '-1'
+
+(ENTUPD <nombre_ent>) = Actualiza la imagen de un objeto (entidad) en pantalla 

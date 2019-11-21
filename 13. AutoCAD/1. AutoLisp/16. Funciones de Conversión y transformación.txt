@@ -1,0 +1,73 @@
+(itoa entero) = convierte un entero a string
+(float numero) = convierte un entero o real a real
+(atoi cadena) = convierte un string a numero
+(atof cadena) = convierte un string a real
+(fix numReal) = convierte un real a entero
+
+(RTOS <número> modo precisión) = convierte un numero real a string 
+	
+	modo: entero del 1 al 5 que determina el formato numérico de la cadena:
+		1. Unidades científicas
+		2. Unidades decimales
+		3. Pies y pulgadas I (fracción decimal)
+		4. Pies y pulgadas II (fracción propia)
+		5. Unidades fraccionarias
+
+	precisión: Entero que define el numero de decimales
+
+(DISTOF <cadena> modo) = convierte un string a real
+	
+	modo: entero del 1 al 5 que determina el formato numérico de la cadena:
+		1. Unidades científicas
+		2. Unidades decimales
+		3. Pies y pulgadas I (fracción decimal)
+		4. Pies y pulgadas II (fracción propia)
+		5. Unidades fraccionarias
+
+(ANGTOS <ángulo> modo precisión) = convierte un numero (angulo) en una cadena de caracteres
+	
+	modo: entero del 0 al 4 que determina el formato numérico en la cadena:
+		0. Grados sexagesimales.
+		1. Grados, minutos y segundos
+		2. Grados centesimales.
+		3. Radianes
+		4. Unidades geodésicas.
+
+	precisión: entero que determina el número de decimales de precisión en la cadena. 
+
+(ANGTOF <"cadena"> modo) = Convierte un String en un numero (angulo)
+
+	modo: entero del 0 al 4 que determina el formato numérico en la cadena:
+		0. Grados sexagesimales.
+		1. Grados, minutos y segundos
+		2. Grados centesimales.
+		3. Radianes
+		4. Unidades geodésicas.
+
+(ASCII <"cadena">) = convierte un caracter en el numero correspondiente a su codigo ASCII
+(CHR <entero>) = Convierte un numero en el caracter correspondiente a su codigo ASCII
+
+(READ <"cadena">) = Devuelve primer ítem de una cadena de caracteres o la primera lista si 
+						la cadena contiene listas. 
+
+(TRANS <lista de punto o desplazamiento> <codvie> < codnue> [desp] ) = Transforma las coordenadas de un punto de un sistema de 																			coordenadas a otro
+
+	codvie: código que expresa el sistema de coordenadas en el cual se expresa el punto.
+	conue: código que expresa el sistema de coordenadas en el cual se quiere expresar el punto
+
+		0. SCU
+		1. SCP
+		2. SCV (visualización)
+		3. SCV espacio papel
+
+	desp : si es distinto de nil entiende el primer argumento como un desplazamiento. 
+
+ (CVUNIT <numero o lista> <cadvie> <cadnue>) = Convierte numeros de una unidad de medida a otra
+
+	cadvie: cadena de unidad de medida vieja.
+	cadvie: cadena de unidad de medida nueva. 
+
+		"minuto" "segundo"
+		"pulgada" "cm" "pie"
+		"acre" "yarda cuadrada"
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cerciber.prueba.MainActivity">
+
+    <!-- TextView = Elemento para visualizar texto -->
+
+    <!-- android:id = identificador del elemento -->
+
+    <!-- android:layout_width = distribucion del ancho -->
+    <!-- android:layout_height = distribucion del alto -->
+
+        <!-- "wrap_content" = atrapar contenido -->
+        <!-- "match_parent" = ajustar al elemento padre -->
+
+    <!-- android:inputType = tipo de texto de la entrada -->
+
+        <!-- text = texto -->
+        <!-- textEmailAddress = direccion de correo -->
+        <!-- number = numero -->
+        <!-- phone = telefono -->
+        <!-- textUri = direccion web -->
+
+    <!-- android:drawableLeft = imagen especificada se posiciona la izquierda -->
+    <!-- android:drawableRight = imagen especificada se posiciona la derecha -->
+    <!-- android:hint = texto de ayuda o descriptivo -->
+    <!-- android:textColorHint = color del texto de ayuda -->
+
+    <EditText android:id="@+id/editorTexto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="escriba aquí"
+        android:textColorHint="#CFCFCF"
+        android:inputType="text" />
+
+</RelativeLayout>

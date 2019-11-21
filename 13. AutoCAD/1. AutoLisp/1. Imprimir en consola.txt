@@ -1,0 +1,2 @@
+ // Imprimir texto en consola
+ (print valor)

@@ -1,0 +1,1 @@
+SCRIPT "C:nombre" = Llamar script en la misma ubicación del otro script

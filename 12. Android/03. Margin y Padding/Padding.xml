@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+ 
+    <!-- android:padding = longitud de margen interior de todos los lados -->
+    <!-- android:paddingBottom = longitud de margen interior del lado inferior -->
+    <!-- android:paddingTop = longitud de margen interior del lado superior -->
+    <!-- android:paddingLeft = longitud de margen interior del lado izquierdo -->
+    <!-- android:paddingRight = longitud de margen interior del lado derecho -->
+
+    <Button android:id="@+id/TxtDato1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="hola"
+        android:padding="100px"/>
+
+    <Button android:id="@+id/TxtDato2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="text"
+        android:text="mundo"
+        android:paddingBottom="200px"
+        android:paddingTop="100px"
+        android:paddingLeft="50px"
+        android:paddingRight="20px"/>
+
+</LinearLayout>

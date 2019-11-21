@@ -1,0 +1,11 @@
+# Crear una carpeta
+mkdir 'nombre carpeta'
+
+# Ingresar a una carpeta
+cd 'nombre carpeta'
+
+# Crea archivo
+touch 'nombre archivo'
+
+# Escribir en un archivo
+echo "Hola Mundo" > 'nombre archivo'

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cerciber.prueba.MainActivity">
+
+    <!-- TextView = Elemento para visualizar texto -->
+
+    <!-- android:id = identificador del elemento -->
+
+    <!-- android:layout_width = distribucion del ancho -->
+    <!-- android:layout_height = distribucion del alto -->
+
+        <!-- "wrap_content" = atrapar contenido -->
+        <!-- "match_parent" = ajustar al elemento padre -->
+
+    <!-- android:text = texto inicial de la entrada -->
+    <!-- android:background = color de fondo -->
+
+    <!-- android:typeface = tipo de letra -->
+
+        <!-- monospace = tipo de letra de misma longitud -->
+
+    <TextView android:id="@+id/Texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="texto"
+        android:background="#c31297df"
+        android:typeface="monospace"/>
+
+</RelativeLayout>

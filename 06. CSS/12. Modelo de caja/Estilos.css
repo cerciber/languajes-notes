@@ -1,0 +1,6 @@
+#div1 {
+	/* Modelo de caja */
+    margin: 50px;
+    border: 25px solid green;    
+    padding: 50px;
+}

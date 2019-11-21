@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- LinearLayout = todos sus elementos se posicionan en cola -->
+
+	<!-- android:orientation = direccion en la que se alinean los elementos -->
+	<!-- android:layout_weight = longitud del objeto en relacion a los demás -->
+
+    <!-- android:showDividers = Mostrar divisores de elementos -->
+        
+        <!-- middle = divisor en medio de los objetos -->
+
+    <!-- android:divider = Orientacion del divisor -->
+    
+        <!-- vertical = vertical -->
+        <!-- horizontal = horizontal -->
+
+    <!-- android:dividerPadding = Margen entre el divisor y los elementoss -->
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:showDividers="middle"
+    android:divider="?android:dividerVertical"
+    android:dividerPadding="6dp">
+ 
+    <!-- Contenido -->
+    <EditText android:id="@+id/TxtDato1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:layout_weight="1" />
+ 
+    <EditText android:id="@+id/TxtDato2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:inputType="text"
+        android:layout_weight="2" />
+ 
+</LinearLayout>

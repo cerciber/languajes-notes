@@ -1,0 +1,5 @@
+(LIST expresion1 expresion2 ...) = Crea una lista a partir de un número de expresiones 
+(APPEND lista1 lista2 ...) = une varias listas en una 
+(CONS expresión lista) = Anade una expresionn como primer elemento de una lista
+(CONS expresion1 expresion2) = Construye una estructura en que las expresiones con separadas por puntos
+(LENGTH lista) = cuenta elemtos de una lista

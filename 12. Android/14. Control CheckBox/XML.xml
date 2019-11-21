@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.cerciber.prueba.MainActivity">
+
+    <!-- CheckBox = Elemento de entrada para dos estados -->
+
+        <!-- android:id = identificador del elemento -->
+
+        <!-- android:layout_width = distribucion del ancho -->
+        <!-- android:layout_height = distribucion del alto -->
+
+            <!-- "wrap_content" = atrapar contenido -->
+            <!-- "match_parent" = ajustar al elemento padre -->
+
+    <!-- android:text = texto de la entrada -->
+    <!-- android:background = color de fondo -->
+
+    <!-- android:typeface = tipo de letra -->
+
+        <!-- monospace = tipo de letra de misma longitud -->
+
+    <!-- android:checked = estado del checkBox -->
+
+        <!-- true = seleccionado -->
+        <!-- false = no seleccionado -->
+
+    <CheckBox android:id="@+id/checkBox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="texto"
+        android:checked="true" />
+
+</RelativeLayout>

@@ -1,0 +1,69 @@
+Sub prueba()
+
+    ' Abrir documento en la ruta especificada
+    Dim documento As Inventor.DrawingDocument
+    Set documento = ThisApplication.Documents.Open("C:\Users\cesar\Downloads\Reductor de Velocidad-20170408T222446Z-001\Reductor de Velocidad\Planos\1 Reductor.dwg", True)
+    Debug.Print "DrawingDocument: " + documento.FullFileName
+    
+    hojas documento
+
+End Sub
+
+Sub hojas(documento As Inventor.DrawingDocument)
+
+    Dim i As Integer
+    For i = 1 To documento.Sheets.Count
+ 
+        Dim sheet As sheet
+        Set sheet = documento.Sheets.Item(i)
+        Debug.Print "   sheet: " + sheet.Name
+        
+        listasDePartes sheet
+    
+     Next
+
+End Sub
+
+Sub listasDePartes(sheet As sheet)
+
+    Dim i As Integer
+    For i = 1 To sheet.PartsLists.Count
+ 
+        Dim PartsList As PartsList
+        Set PartsList = sheet.PartsLists.Item(i)
+        Debug.Print "       PartsList: " + PartsList.Title
+        
+        filas PartsList
+    
+     Next
+
+End Sub
+
+Sub filas(PartsList As PartsList)
+
+    Dim i As Integer
+    For i = 1 To PartsList.PartsListRows.Count
+ 
+        Dim PartsListRow As PartsListRow
+        Set PartsListRow = PartsList.PartsListRows.Item(i)
+        Debug.Print "           PartsListRow: "
+        
+        columnas PartsList, PartsListRow
+    
+     Next
+
+End Sub
+
+Sub columnas(PartsList As PartsList, PartsListRow As PartsListRow)
+
+    Dim i As Integer
+    For i = 1 To PartsList.PartsListColumns.Count
+ 
+        Dim PartsListColumn As PartsListColumn
+        Set PartsListColumn = PartsList.PartsListColumns.Item(i)
+        Debug.Print "               " + PartsListColumn.Title + ": " + PartsListRow.Item(i)
+    
+     Next
+
+End Sub
+

@@ -1,0 +1,26 @@
+(+ num1 num2 num3 ...) = sumar
+(- num1 num2 num3 ...) = restar
+(* num1 num2 num3 ...) = multiplicación
+(/ num1 num2 num3 ...) = división entera (todos los valores son enteros)
+(/ num1 num2 num3 ...) = división decimal (Algun valor debe ser real)
+
+(~ num) = operador NOT binario (devuelve -1-num)
+
+(1+ num) = Incremento (suma 1)
+(1- num) = Decremento (resta 1)
+
+(ABS num) = Valor absoluto
+(ATAN num) = Arcotangente
+(COS num) = Coseno
+(SIN num) = Seno
+(EXP num) = Antilogaritmo neperiano
+(LOG num) = Logaritmo neperiano
+(EXPT base potencia) = Potencia
+(GCD num1 num2 num3 ...) = Maximo Comun Divisor
+(MAX num1 num2 num3 ...) = Numero maximo
+(MIN num1 num2 num3 ...) = Numero minimo
+(MINSUB num) = Comprueba si el número es menor que 0 
+(REM num1 num2) = residuo o modulo entre dos numeros
+(SQRT num) = raiz cuadrada
+(ZEROP num) = comprueba si un numero es 0
+(NUMBERP expresion) = Comprueba si la evaluación de una función es un número 

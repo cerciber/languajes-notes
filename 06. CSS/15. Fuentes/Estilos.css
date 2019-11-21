@@ -1,0 +1,32 @@
+#div1 {
+	/* Fuente de texto */
+    font-family: "Times New Roman";
+}
+#div2 {
+	/* Estilo Normal */
+    font-style: normal;
+}
+#div3 {
+	/* Estilo Cursiva */
+    font-style: italic;
+}
+#div4 {
+	/* Estilo Inclinado*/
+    font-style: oblique;
+}
+#div5 {
+	/* Tamaño de fuente */
+    font-size: 40px;
+}
+#div6 {
+	/* Peso normal */
+    font-weight: normal;
+}
+#div7 {
+	/* Peso en Negrita */
+    font-weight: bold;
+}
+#div8 {
+	/* convertir a mayusculas con un tamaño d letra mas reducido */
+    font-variant: small-caps;
+}

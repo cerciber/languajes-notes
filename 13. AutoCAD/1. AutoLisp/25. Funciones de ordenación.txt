@@ -1,0 +1,6 @@
+(ACAD_STRLSORT lista) = Ordena alfabéticamente listas de cadenas de caracteres
+
+(VL-SORT lista función) = Ordena todos los elementos de una lista de acuerdo con una función de comparación dada
+
+(VL-SORT-I lista función) = Ordena todos los elementos de una lista de acuerdo con una función de comparación dada
+							y devuelve sus índices.

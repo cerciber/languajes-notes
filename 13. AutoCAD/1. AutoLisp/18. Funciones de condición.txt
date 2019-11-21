@@ -1,0 +1,8 @@
+(COND <lista1> <lista2> ...) =  Evalúa el primer elemento de cada lista (en el orden indicado) 
+								hasta que uno de ellos devuelva un valor distinto de nil. A continuación, 
+								evalúa las expresiones que siguen a este elemento y pasa por alto las 
+								restantes listas 
+
+(IF <test> <expresión T> <expresión nil> ) = Ejecuta una expresion diferente para cada resultado de la primera expresion
+
+(PROGN <exp1> <exp2> ...) = Calcula varias expresiones en una sola

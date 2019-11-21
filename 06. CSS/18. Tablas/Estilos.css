@@ -1,0 +1,17 @@
+table {
+	/* Contraer bordes */
+    border-collapse: collapse;
+    border: solid;
+}
+/* Estado de la fila al pasar el mouse */
+tr:hover {
+	background-color: green;
+}
+/* Estado del campo al pasar el mouse */
+td:hover {
+	background-color: blue;
+}
+/* Rayas de cebra*/
+tr:nth-child(even) {
+	background-color: #f2f2f2
+}

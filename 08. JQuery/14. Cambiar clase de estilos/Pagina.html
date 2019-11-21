@@ -1,0 +1,32 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-1.11.0.min.js"> </script>
+		<style type="text/css">
+			
+			.clase1{ background-color: green; }
+			.clase2{ background-color: blue; }
+
+		</style>
+		<script> 
+		
+			$(document).ready(function(){
+
+				$("#boton1").mouseover(function(){
+
+					/* Remover clase */
+					$(this).removeClass("clase1");
+
+					/* Asignar clase */
+					$(this).addClass("clase2");
+					
+				});
+
+			});
+
+		</script>
+	</head>
+<body>
+	<input id="boton1" class="clase1" type="button" value="boton">
+</body> 

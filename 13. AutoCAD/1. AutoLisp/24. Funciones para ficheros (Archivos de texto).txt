@@ -1,0 +1,36 @@
+* Gestion de ficheros
+
+	(LOAD <"nombre del fichero"> [si falla] ) = carga un archivo.lsp en la ruta especificada (separador de carpetas / 0 \\)
+
+	(OPEN <"nombre de fichero"> <"clave de acceso">) = Abre un archivo de disco para leer o almacenar datos
+	
+		"clave de acceso"
+			"r": Abre un fichero para lectura
+			"w": Abre un fichero para escritura
+			"a": Abre un fichero para escribir añadiendo nuevos datos al final del mismo
+
+	(CLOSE <símbolo correspondiente al descriptor de fichero>) = Cierra un archivo abierto
+
+	(FINDFILE <"nombre_archivo">) = Localiza un archivo en la ruta de búsqueda de archivos de Autocad
+
+* Escritura en ficheros
+
+	(PRIN1 [expresión] [descriptor de fichero]) = Imprime una expresión AutoLISP en el área de órdenes o la escribe en un archivo.
+
+	(PRINC [expresión] [descriptor de fichero]) = Imprime una expresión AutoLISP en el área de órdenes o la escribe en un archivo.
+												  (evalúa los caracteres de control que aparezcan en la expresión)
+
+	(PRINT [expresión] [descriptor de fichero]) = Imprime un salto de línea, una expresión AutoLISP y un espacio en el 
+												  área de órdenes o lo escribe en un archivo.
+
+	(WRITE-CHAR <num> [descriptor de fichero]) = Escribe un solo carácter en el área de órdenes o bien en un fichero abierto.
+
+	(TERPRI) = Imprime un salto de línea en el área de órdenes.
+
+* Lectura de ficheros
+
+	(READ-CHAR [descriptor de fichero]) = Lee caracteres procedentes del bufer del teclado o de un archivo abierto 
+										  en modo de lectura
+
+	(READ-LINE [descriptor de fichero]) = Lee una cadena de caracteres procedentes del bufer del teclado o de un archivo 
+										  abierto en modo de lectura.

@@ -1,0 +1,49 @@
+\documentclass[a4paper]{article}
+\usepackage[opcion]{paquete}
+
+\title{Titulo} 
+\author{autor } 
+\date{fecha}
+
+\begin{document} 
+
+	$$ 
+	\begin{array}{alineacion} % Inicio del arreglo %
+		
+		\hline % linea superior
+
+		Celda11 & Celda12 & ... & Celda1N \\
+		Celda21 & Celda22 & ... & Celda2N \\
+		.
+		.
+		.
+		CeldaM1 & CeldaM2 & ... & CeldaMN \\
+
+		\hline % linea inferior
+
+	\end{array} % Fin del arreglo %
+	$$
+
+	% alineacion %
+
+		%	l   = 	para alineacion a izquierda (left)
+		%	r 	=	para alineacion a derecha (right)
+		%	c 	=	para alineacion al centro
+		%	| 	=	produce una lınea vertical que separa dos columnas
+		%	p{longitud}	=	crea una columna de ancho determinado por el parametro longitud
+		%	@{texto} 	=	suprime el espacio entre columnas e inserta un texto en su lugar
+
+		$$ Ej.
+
+			\begin{array}{jrr@f,gljcj}
+			\hline 12 & 2 & 27 & 1 \\
+			131 & 421 & 2 & 11 \\
+			1424 & 12&7 & 111 \\
+			\hline
+			\end{array}
+
+		$$
+
+\end{document} 
+
+

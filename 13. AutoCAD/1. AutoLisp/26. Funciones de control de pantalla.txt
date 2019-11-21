@@ -1,0 +1,14 @@
+(REDRAW ) = Redibuja la pantalla de presentación (o las entidades especificadas)
+
+(GRAPHSCR) = Fuerza la presentación de pantalla gráfica en sistema de pantalla única
+
+(TEXTSCR) = Presenta la pantalla texto en sistemas de pantalla única
+
+(TEXTPAGE) = Presenta la pantalla texto en sistemas de pantalla única y la limpia
+
+(VPORTS) = Extrae los números de identificación de las ventanas gráficas
+	
+	Valor retornado: Una lista de sublistas donde los elementos de cada sublista son:
+		1. El número de identificación de cada ventana gráfica.
+		2. Coordenadas de la esquina inferior izquierda (coordenadas normalizadas).
+		3. Coordenadas de las esquina superior derecha..

@@ -1,0 +1,6 @@
+; CIRCULO 	centro radio
+(COMMAND "_CIRCLE" "100,100" 50)
+
+; LINEA 	punto1 punto2 ... Enter
+(command "_line" "100,100" "100,100" "100,100" "100,100" ... "")
+

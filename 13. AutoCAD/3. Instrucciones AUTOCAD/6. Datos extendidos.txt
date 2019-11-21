@@ -1,0 +1,2 @@
+xdata = asignar datos a un elemeto
+xdlist =  listar datos de un elemento

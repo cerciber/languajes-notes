@@ -1,0 +1,3 @@
+(vlax-method-applicable-p objeto "metodo") = Comprobar si existe el metodo en el objeto
+
+(vlax-property-available-p objeto atributo) = Comprobar si existe el atributo en el objeto

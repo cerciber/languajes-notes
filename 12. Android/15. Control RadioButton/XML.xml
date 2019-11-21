@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="match_parent"
+android:layout_height="match_parent"
+android:paddingBottom="@dimen/activity_vertical_margin"
+android:paddingLeft="@dimen/activity_horizontal_margin"
+android:paddingRight="@dimen/activity_horizontal_margin"
+android:paddingTop="@dimen/activity_vertical_margin"
+tools:context="com.cerciber.prueba.MainActivity">
+
+    <!-- RadioGroup = Elemento para agrupar RadioButtons para que solo se pueda seleccionar uno -->
+
+        <!-- android:id = identificador del elemento -->
+
+        <!-- android:orientation = orientacion de los RadioButtons -->
+
+            <!-- horizontal / vertical -->
+
+    <!-- RadioButton = Elemento de entrada para dos estados en forma circular -->
+
+        <!-- android:id = identificador del elemento -->
+
+            <!-- android:layout_width = distribucion del ancho -->
+            <!-- android:layout_height = distribucion del alto -->
+
+                <!-- "wrap_content" = atrapar contenido -->
+                <!-- "match_parent" = ajustar al elemento padre -->
+
+        <!-- android:text = texto de la entrada -->
+        <!-- android:background = color de fondo -->
+
+        <!-- android:typeface = tipo de letra -->
+
+            <!-- monospace = tipo de letra de misma longitud -->
+
+        <!-- android:checked = estado del checkBox -->
+
+            <!-- true = seleccionado -->
+            <!-- false = no seleccionado -->
+
+    <RadioGroup android:id="@+id/radioGrupo"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <RadioButton android:id="@+id/radioBoton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opcion_1"
+            android:checked="true"/>
+
+        <RadioButton android:id="@+id/radioBoton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="opcion_2" />
+
+    </RadioGroup>
+
+</RelativeLayout>

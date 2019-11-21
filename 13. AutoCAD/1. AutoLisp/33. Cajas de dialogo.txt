@@ -1,0 +1,28 @@
+* Ejecutar archivo .DCL
+
+	(setq ruta (findfile "dibujo.dwg")) ; Obtener ruta del dibujo
+	(setq ruta (vl-filename-directory ruta)) ; Obtener directorio del dibujo
+	(setq ruta (strcat ruta "\\archivo.dcl")) ; Anclar nombre y extencion del archivo DCL.
+	(setq variable (load_dialog ruta)) ; Cargar archivo DCL
+	(new_dialog "nombre dialogo" variable) ; Crear caja de dialogo
+	 	;instrucciones para gestionar la caja de dialogo
+	 	;(no se permite instrucciones de tipo command)
+	(start_dialog) ; Iniciar caja de dialogo (retorna una referencia numerica si hay)
+
+* Instrucciones para gestionar la caja de dialogo
+
+	(done_dialog) ; Cerrar dialogo con exito
+	(done_dialog num) ; Cerrar dialogo retornando un valor numerico en (start_dialog)
+ 
+	(set_tile "key" valor) ; asignar caracteristica
+	(get_tile "key") ; obtener caracteristica
+	(mod_tile "key" valor) ; modificar caracteristica
+
+	(action_tile "key" "codigo lisp") ; ejecutar acciones en los objetos 
+	(action_tile "accept" "codigo lisp") ; programar boton aceptar
+
+	(alert "mensaje") ; mensaje de alerta
+	
+	(start_list "key") ; abrir lista
+	(add_list "texto") ; añadir texto a la lista
+	(end_list) ; cerrar lista

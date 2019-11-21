@@ -1,0 +1,33 @@
+// plugin de la aplicacion
+apply plugin: 'com.android.application'
+
+// caracteristicas de los recursos de la aplicacion
+android {
+
+    compileSdkVersion 23    // version del SDK
+    buildToolsVersion "24.0.0"  // version de las herramientas de construccion
+
+    // configuracion por defecto
+    defaultConfig {
+        applicationId "com.cerciber.prueba" // identificador y dominio de la aplicacion
+        minSdkVersion 14    // version minima del sdk
+        targetSdkVersion 23 // version que la app se dirige a correr
+        versionCode 1   // codigo de la version
+        versionName "1.0"   // nombre de la version
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+// Dependencias
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])   // compilar arbol de archivos
+    testCompile 'junit:junit:4.12'  // test de compilcacion
+    compile 'com.android.support:appcompat-v7:23.4.0'   // librerias externas que se incluiran en la app
+
+}

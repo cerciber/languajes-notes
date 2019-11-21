@@ -1,0 +1,30 @@
+(Entsel mensaje) = Pide al usuario que seleccione un solo objeto (entidad) especificando un punto
+(Getangle mensaje) = Pide un ángulo en grados al usuario, y devuelve ese ángulo en radianes
+(Getcorner mensaje '(x y z)) = Pide pide la segunda esquina de un rectangulo teniendo como punto base a "x" "y" "z"
+(Getdist mensaje) = Pedir dos puntos y calcular la distancia entre ellos
+
+(getfiled "titulo ventana" "ruta predeterminada" "extencion" accion) = obtener o crear una ruta de archivo
+	accion = 0 (abrir archivo)
+	accion = 1 (guardar archivo)
+	extencion = lsp (archivo tipo lisp)
+
+(getint mensaje) = Pide al usuario un numero entero
+(getReal "Mensaje") = Pide al usuario un numero real
+(getString "Mensaje" ) = Pide al usuario una cadena de caracteres (una palabra)
+(getString "Mensaje" T) = Pide al usuario una cadena de caracteres (varias plabras)
+
+(Initget 1 "Sí No" ) = Establece las palabras clave para su uso por la siguiente llamada de función de entrada de usuario 
+	- (Las mayusculas iniciales sirven de accesos raídos)
+		1: no permite nulos (No enter)
+		2: no permite cero
+		4: no permite negativos
+		8: no chequea límites del dibujo
+		64: devuelve una distancia 2D, en lugar de 3D. 
+
+(getkword mensaje) = obtener kword (solo acepta las opciones definidas en Initget)
+
+(getorient "Mensaje") = Pide un ángulo en grados al usuario, y devuelve ese ángulo en radianes (depende de la orientación)
+(getangle "Mensaje") = Pide un ángulo en grados al usuario, y devuelve ese ángulo en radianes
+
+(getpoint "Mensaje") = Pide al usuario un punto
+(getvar "cdate") = obtener la fecha del sistema

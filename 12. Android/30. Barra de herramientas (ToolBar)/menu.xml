@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Crear menu para el ToolBar -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- android:title = nombre del item -->
+    <!-- orderInCategory = orden preferido (no es un orden obligatorio, depende del layout) -->
+    <!-- app:showAsAction = Tipo de visualizacion del item -->
+
+    <!-- Item que solo se muestra en la opciones adicionales como texto -->
+    <item
+        android:id="@+id/titulo1"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:orderInCategory="1"
+        android:title="titulo1"
+        app:showAsAction="never" />
+
+    <!-- Item que solo se muestra como icono en la barra -->
+    <item
+        android:id="@+id/titulo2"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:orderInCategory="2"
+        android:title="titulo2"
+        app:showAsAction="always" />
+
+    <!-- Item que se muestra en la barra como icono si encaja -->
+    <item
+        android:id="@+id/titulo3"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:orderInCategory="3"
+        android:title="titulo3"
+        app:showAsAction="ifRoom" />
+
+    <!-- Item que se muestra en la barra como icono si encaja y con texto si encaja -->
+    <item
+        android:id="@+id/titulo4"
+        android:icon="@android:drawable/ic_menu_slideshow"
+        android:orderInCategory="4"
+        android:title="titulo4"
+        app:showAsAction="ifRoom|withText" />
+
+</menu>

@@ -1,0 +1,43 @@
+\documentclass[a4paper]{article}
+\usepackage[opcion]{paquete}
+
+\title{Titulo} 
+\author{autor} 
+\date{fecha}
+
+\begin{document} 
+
+	% Ecuaccion enumerada %
+	\begin{equation}
+	primer miembro = segundo miembro
+	\end{equation}
+
+	% Ecuacion sin enumerar %
+	$$
+	primer miembro = segundo miembro
+	$$
+
+	% Ecuacion con varias lineas %
+	$$
+	\begin{array}{lcl}
+		primer miembro 1   &   = 	& 	segundo miembro 1 \\
+		primer miembro 2   &   = 	& 	segundo miembro 2 \\
+		.
+		.
+		.
+		primer miembro N   &   = 	& 	segundo miembro N \\
+	\end{array}
+	$$
+
+	% Ecuaciones recuadradas (cubiertas de un cuadro) %
+	{\fboxsep 8pt\fboxrule 1pt
+		\begin{equation}
+			\fbox{
+				$
+				primer miembro = segundo miembro
+				$
+			}
+		\end{equation}
+	}
+
+\end{document} 

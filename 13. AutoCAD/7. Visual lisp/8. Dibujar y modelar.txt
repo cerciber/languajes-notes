@@ -1,0 +1,2 @@
+(vla-nombreMetodo objetoEspacioDeDibujo atributos... ) = Ejecutar un metodo del espacio de dibujo
+(vla-put-propiedadObjeto objeto valor) = Cambiar un atributo de un objeto

@@ -1,0 +1,59 @@
+#div1 {
+	/* Esquema de puntos */
+    outline-style: dotted;
+}
+#div2 {
+	/* Esquema de lineas cortadas */
+    outline-style: dashed;
+}
+#div3 {
+	/* Esquema continuo */
+    outline-style: solid;
+}
+#div4 {
+	/* Esquema doble */
+    outline-style: double;
+}
+#div5 {
+	/* Esquema ancaldo 3D */
+    outline-style: groove;
+}
+#div6 {
+	/* Esquema borde estriado 3D */
+    outline-style: ridge;
+}
+#div7 {
+	/* Esquema insertado 3D */
+    outline-style: inset;
+}
+#div8 {
+	/* Esquema sobresalido 3D */
+    outline-style: outset;
+}
+#div9 {
+	/* Esquema sin borde */
+    outline-style: none ;
+}
+#div10 {
+	/* Esquema oculto */
+    outline-style: hidden;
+}
+#div11 {
+	/* Esquema mixto */
+    outline-style: dotted dashed solid double;
+}
+#div12 {
+	/* Ancho de Esquema */
+    outline-style: solid;
+    outline-width: 5px;
+}
+#div13 {
+	/* Ancho de Esquema individuales */
+    outline-style: solid;
+    outline-width: 2px 10px 4px 20px;
+}
+#div14 {
+	/* Color de Esquema */
+    outline-style: solid;
+    outline-color: red green blue yellow;
+}

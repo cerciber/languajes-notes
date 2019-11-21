@@ -1,0 +1,1 @@
+(setq variable1 subrrutina) = asignar subrutina en una variable

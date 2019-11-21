@@ -1,0 +1,5 @@
+( APPLY '<función> '<Lista> ) = Ejecuta una funcion tomando como argumentos los elementos de una lista
+( MAPCAR '<función> '<Lista1> '<Lista2> ...) = Ejecuta una funcion para cada conjunto de elementos con 
+												el mismo indice de cada lista
+( LAMBDA < argumentos > < expresión >) = Define una función sin darle un nombre. El conjunto de expresiones se 
+ 											aplica sobre los argumentos 

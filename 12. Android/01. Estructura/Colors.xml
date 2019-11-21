@@ -1,0 +1,10 @@
+<!-- version y codificado de caracteres -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Etiqueta de direcciones -->
+<resources>
+
+	<!-- Etiqueta para definir colores -->
+    <color name="nombre_color">valor color (Hexagesimal)</color>
+
+</resources>

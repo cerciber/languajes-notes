@@ -1,0 +1,21 @@
+(SSGET [modo] [pt1 [pt2]] [lista_pt] [lista_filtros]) = Solicita al usuario que designe objetos (entidades) y devuelve un
+														conjunto de selección (un puntero a la información del conjunto). 
+
+	Modo: es una cadena que especifica el método de designación de objetos. 
+
+		nil: Solicita al usuario que realice una designación general de objetos y los incluye en un conjunto de selección
+		"_W": Crea un conjunto de selección con los objetos incluidos en la ventana desde pt1 a pt2. 
+		"_WP": Crea un conjunto de selección con los objetos incluidos en el poligono definido por lista_pt. 
+		"_C": Crea un conjunto de selección con los objetos que pasan por la ventana desde pt1 a pt2. 
+		"_CP": Crea un conjunto de selección con los objetos que pasan por el poligono definido por lista_pt. 
+		"_L": Crea un conjunto de selección con los últimos objetos visibles añadidos a la base de datos.
+		"_P": Crea un conjunto de selección con los últimos Objetos seleccionados.
+		"_F": Crea un conjunto de selección con todos los objetos que intersecan el borde definido por lista_pt.
+		"X": Crea un conjunto de selección con todos los objetos de la base de datos
+
+	pt1 y pt2: especifican puntos relevantes para la designación. 
+
+	Lista_pt: especifican puntos relevantes para la designación para los casos en que sea necesario. 
+
+	lista_filtros: es una lista de asociaciones que especifica propiedades de objeto. Los objetos que coinciden con la 
+					lista_filtros se añaden al conjunto de selección. 

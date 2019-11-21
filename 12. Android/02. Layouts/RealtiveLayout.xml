@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- RelativeLayout = especifica la posición de cada elemento con respecto al padre o a cualquier otro elemento -->
+
+    <!-- android:layout_above = ubicar elemento encima del objeto con el id especificado -->
+	<!-- android:layout_below = ubicar elemento debajo del objeto con el id especificado -->
+    <!-- android:layout_toLeftOf = ubicar elemento a la izquierda del objeto con el id especificado -->
+    <!-- android:layout_toRightOf = ubicar elemento a la derecha del objeto con el id especificado -->
+
+    <!-- android:layout_alignLeft = alinear elemento hacia la izquierda del objeto con el id especificado -->
+    <!-- android:layout_alignRight = alinear elemento hacia la derecha del objeto con el id especificado -->
+    <!-- android:layout_alignTop = alinear elemento hacia arriba del objeto con el id especificado -->
+    <!-- android:layout_alignBottom = alinear elemento hacia abajo del objeto con el id especificado -->
+
+    <!-- android:layout_alignParentLeft = alinear a la izquierda con respecto al padre -->
+    <!-- android:layout_alignParentRight = alinear a la derecha con respecto al padre -->
+    <!-- android:layout_alignParentTop = alinear hacia arriba con respecto al padre -->
+    <!-- android:layout_alignParentBottom = alinear hacia abajo con respecto al padre -->
+    <!-- android:layout_centerHorizontal = centrar horizontalmente con respecto al padre -->
+    <!-- android:layout_centerVertical = centrar verticalmente con respecto al padre -->
+    <!-- android:layout_centerInParent = centrar en el elemento padre -->
+
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+ 
+        <EditText android:id="@+id/TxtNombre"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:inputType="text" />
+ 
+        <Button android:id="@+id/BtnAceptar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TxtNombre"
+            android:layout_alignParentRight="true" />
+</RelativeLayout>

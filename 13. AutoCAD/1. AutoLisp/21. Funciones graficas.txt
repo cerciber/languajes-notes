@@ -1,0 +1,13 @@
+( ANGLE <pt1> <pt2>) = Calcula el ángulo que formaría una recta definida por dos puntos con la dirección positiva del eje X
+						del SCP actual (si los puntos son 3D se proyectan sobre el plano de construcción actual).
+						Retorna Un ángulo en radianes. 
+
+( DISTANCE <pt1> <pt2>) = Calcula la distancia entre dos puntos
+
+( POLAR <pt> <ang> <dis>) = Calcula un punto que pasa por el ángulo “ang” (radianes) y a una distancia “dis” del punto dado.
+
+( INTERS <pt1> <pt2> <pt3> <pt4> [extend]) = Calcula el punto de intersección entre dos líneas 
+
+	Extend: 
+		- nil: las líneas se prolongan hasta encontrar el punto de intersección
+		- T: sólo se busca la intersección en la longitud de los segmentos definidos por los puntos. 

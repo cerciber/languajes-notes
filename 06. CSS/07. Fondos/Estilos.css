@@ -1,0 +1,34 @@
+#div1 {
+	/* Color de fondo */
+    background-color:lightblue;
+}
+#div2 {
+	/* Imagen de fondo repitiendo en x y y*/
+    background-image: url("Imagen.jpg");
+    background-repeat: repeat;
+}
+#div3 {
+	/* Imagen de fondo repitiendo solo en x*/
+    background-image: url("Imagen.jpg");
+    background-repeat: repeat-x;
+}
+#div4 {
+	/* Imagen de fondo repitiendo solo en y*/
+    background-image: url("Imagen.jpg");
+    background-repeat: repeat-y;
+}
+#div5 {
+	/* Imagen de fondo sin repetir*/
+    background-image: url("Imagen.jpg");
+    background-repeat: no-repeat;
+}
+#div6 {
+	/* Ubicación de la Imagen de fondo */
+    background-image: url("Imagen.jpg");
+    background-position: right top;
+}
+#div7 {
+	/* Imagen de fondo fija */
+    background-image: url("Imagen.jpg");
+    background-attachment: fixed;
+}

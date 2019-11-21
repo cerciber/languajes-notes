@@ -1,0 +1,331 @@
+* mostrar consola = F2
+* (print valor) = imprimir texto en consola
+* (+ num1 num2 num3 ...) = sumar
+* (- num1 num2 num3 ...) = restar
+* (* num1 num2 num3 ...) = multiplicación
+* (/ num1 num2 num3 ...) = división entera (todos los valores son enteros)
+* (/ num1 num2 num3 ...) = división decimal (Algun valor debe ser real)
+* flecha arriba = recuperar codigo
+* (setq variable1 valor1 ariable2 valor2 ariable3 valor3 ...) = asignar valores a las variables
+* !variable = mirar contendio de una variable
+* nil = vacio
+* (setq variable1 nil) = vaciar variable
+* (setq variable1 subrrutina) = asignar subrutina en una variable
+* lsp = extencion de lisp
+* notepad = abrir blog de notas
+* pbrush = abrir blog de notas
+* C:\Program Files\Autodesk\AutoCAD 2017\UserDataCache\es-es\Support.acad.pgp = 
+* !t = verdadero
+* !pi = numero pi
+* (command "_circle" "100,100" 50) = crear circulo
+* (command "_line" "100,100" "100,100" "100,100" "100,100" ... "") = crear lineas
+
+* Realizar un dibujo a partir de codigo con cambios de entrada, de colores, etc
+* hacer pruebas con instrucciones de slip
+
+* layers
+* repeat
+* while
+* if
+* progn = crear una sola instruccion a partir de carias instrucciones
+
+* cond
+* (getint "Mensaje") = obtener entero
+* (command "_Gradient" punto) = Degradado de un area
+* (getReal "Mensaje") = obtener real
+* (getString "Mensaje" ) = obtener cadena de caracteres (una palabra)
+* (getString "Mensaje" T) = obtener cadena de caracteres (varias plabras)
+* (getpoint "Mensaje") = obtener las cordenadas de un 
+* (getorient "Mensaje") = obtener angulo (depende de la orientación)
+* (getangle "Mensaje") = obtener angulo
+* (getdist "Mensaje") = obtener distancia
+* (getcorner "Mensaje") = obtener esquina
+
+
+**** Prgrama
+- entrada de datos
+- variedad de figuras, colores
+- movimiento 
+- entregar en .lsp
+- entregar word o pdf con titulo ,portada, datos de cada persona, objetivos, respaldo metematico (si hay), copia del programa (imagen), datos del programa, especificar como cargar y ejecutar el programa, bibliografia (si hay), conclusiones
+
+(dealy num) = pausar de tiempo por num
+(rotate) = rotar objeto
+
+
+entityname = identificador de cada objeto mientras el arvhico esta abierto
+handle = identificador de cada ojeto todo el tiempo
+
+(entlast) = identificador del ultimo objeto (entityname)
+(entcel) = identificador de la identidad seleccionada
+(entget) = identificador de la identidad especificada
+
+**** Estudiar que es hacer bloques (agrupar objetos)
+
+**** relor por Bloques
+
+*** Los bloques tienen un punto de inserción
+????????????????????????????????????????????????????????????????????????????????????????????????????????????
+* Crear bloque = _BLOCK
+* Cambiar escala = Insert
+* Insert buscar = llamar plancas como bloques
+* explode = deshacer bloque
+* WBlock = escojer un bloque del dibujo y convertirlo en plancha externa
+* Los bloques y las planchas no pueden tener el mismo nombre
+* _ATTACH = abrir archivo
+* XREFT = necesita todas las planchas
+* _ATTDEF = agregar atributos
+* _ATREDIT = modificar atributos
+* _ATTEXT = extraccion de atributos
+
+***** Hacer pruebas de exportación a texto plano
+
+
+* (nth posicion lista) = extraer elemento en una posición de una lista
+* (assoc primer lista) = estraer elemento relacionando en la primera posicion especificada
+* (cons valores_de_la_lista) = crear una ista a partir de valores
+* (subst expresion_nueva expresion_vieja localizaión) = sutituir elementos de una lista
+
+-- 
+* 50 angulo
+* 10 punto base
+
+* (command "_delay" 1000)
+
+* (entupd "eitity name") = actualizar objeto especifico
+
+* El reloj debe tener un panel que diga la fecha, mes y dia (para el 28)
+* mabaqueroc@unal.edu.co
+
+attdef = definir atributos
+base = definir punto base del dibujo
+insert = insertar elementos externos
+
+Crear archivo de texto
+
+- Nombre de atributo - "C o N" - "000" numero de espacios - Numero de decmales
+BL:X = obtener x 
+BL:Y obtener y 
+BL:ORIENT: obtener inclinación
+BL: XSCALE = obtener escala en x
+BL: YSCALE = obtener escala en y
+
+attext = extraer atributos
+
+Start excel = abrir excel
+
+Abrir archivo de texto separado por espacios o comas
+
+
+******* trabajo - Dibujar sala cad
+******* Objetos por bloques
+******* Atributos para los bloques
+******* Dibujar sala CAD manualmente por medio de los bloques
+******* crear programa que lea el archivo separado por comas y otro separado por espacios para reconstruir la sala CAD
+******* Para el 7 u 11 de marzo
+******* Investigar funciones tipo VL
+
+(open "Nombre archivo" "Tipo de llamado") = abrir archivo (se usa / o \\ para separar carpetas)
+	"Tipo de llamado" = "r" = abrir en modo lectura
+	"Tipo de llamado" = "w" = abrir en modo escritura (borra la información anterior)
+	"Tipo de llamado" = "a" = abrir en modo escritura (añade sobre la información actual)
+(finefile "Nombre archivo") = buscar archivo (en las trayectorias por defecto o en la misma carpeta)
+(close "Nombre archivo") = cerrar archivo
+(read-line "Nombre del archivo") = leer una linea del archivo
+(read-char "Nombre del archivo") = leer un caracter del archivo
+
+
+Datos extendidos
+	- Un objeto almacena hasta 16K de información
+
+xdata = asignar datos a un elemeto
+xdlist =  listar datos de un elemento
+xdsize =
+
+Buscar funciones vl
+
+(redraw (entlast) 3) = seleccionar objeto
+(redraw (entlast) 4) = deseleccionar objeto
+eseleccionar objeto
+
+(entget objeto (list "*")) = seleccionar propiedades delobjeto con todas las propiedades extendidas
+(entget objeto (list "propiedad")) = seleccionar propiedades del objeto con la propiedad especificada
+(regapp "nombre") = registrar nombre de aplicacion
+
+-3 = nombre de aplicación
+
+* CAjas de dialogo
+	- Manejan lenguaje DCL (Dialog Control Language)
+	- Componentes (Tiles)
+		- Predefinidos
+			- button
+			- edit_box
+			- imagen_button
+			- list_box (lista en varios renglones)
+			- popup_list (lista desplegable en un reglon)
+			- radio_button
+			- toogle (caja de chequeo)
+			- slider 
+		- Agrupamiento
+			- column (agrupar elementos en columnas)
+			- boxed_column (agrupar elementos en columnas en una caja)
+			- row (agrupar elementos en filas)
+			- boxed_row (agrupar elementos en filas en una caja)
+			- radio_row
+			- radio_column
+			- boxed_radio_column
+			- boxed_radio_row
+		- Decorativos e informtivos
+			- image (imagen en pantalla)
+			- text (texto en pantalla)
+			- spacer (espaciamiento horizontal o vertical)
+Estructura--
+
+	// definir caja de dialogo
+	nombre: dialog {
+		:elemento1 {
+			propiedad1 = valor1;
+			propiedad2 = valor2;
+		}
+		:elemento2 {
+			propiedad1 = valor1;
+			propiedad2 = valor2;
+		}		
+		ok_cancel_help;
+	}
+
+	//prpiedades
+		label = texto
+		key = identificador
+
+
+// Cargar caja de dialogo
+(setq variable(load_dialog "Nombre archivo.dcl"))
+(new_dialog "Nombre_caja" variable)
+...... instrucciones (no se permite instrucciones de tipo command)
+.................Instrucciones de modificar
+.................Como debe funcionar la caja de dialogo
+(start_dialog) = retorna una referencia numerica al objeto
+
+(done_dialog numReferencia) = cerrar ventana con referencia numerica al objeto
+
+
+// instrucciones
+(set_tile "key" valor) = asignar caracteristica
+(get_tile "key") = obtener caracteristica
+(mod_tile "key" valor) = modificar objetos
+(action_tile "key" "codigo lisp") = ejecutar acciones en los objetos 
+	- Al cerrar la ventana
+	- Programar botones
+
+(action_tile "accept" "codigo lisp") = programar boton aceptar
+
+(alert "mensaje") = mensaje de alerta
+
+(start_list "key") = abrir objeto lista
+
+(add_list "texto") = añadir texto a la lista
+
+(end_list) = cerrar objeto lista
+
+MSLIDE = TOMAR FOTO
+VSLIDE = TRAER IMAGEN GUARDADA
+
+*************** ESTUDIAR COMO PINTAR IMAGENES CON LINEAS
+
+******* TAREA 
+		**** TENER UN dibujo
+			PEDIR QUE SE SELECCIONE UN Objeto
+			MOSTRAR DATOS extendidos SI TIENE
+			MOSTRARLOS EN UNA CAJA DE DIALOGO
+			PERMITIR EDITAR Y GUARDAR LOS DATOS
+			PARA EL 24
+
+
+
+//////////////////////////// calculadora geometrica
+
+(xload "geomcal")
+_CAL expresion
+(command "_cal" "expresion")
+(cal "expresion")
+
+lamar funciones invisibles
+	- Circulo
+	- Seleccionar centro = 'cal -> (end + end) / 2
+	- radio
+
+Obtener centro entre dos puntos en cal
+	(end + end) / 2
+
+Crear vector en cal 
+	vec(a,b)
+
+Crear vector unitario en cal 
+	vec1(a,b)
+
+Crear un vector normal con respecto a un plano
+	nor(a,b,c)
+
+Distancia entre dos puntos
+	dist(a, b) 
+
+Punto de cuadrante del circulo
+	qua
+
+Punto medio 
+	mid
+
+Punto final 
+	end
+
+Angulo entre dos puntos
+	ang(a,b)
+
+Interseccion entre dos lineas
+	ill(p1linea1,p2linea1,p1linea2,p2linea2)
+
+Interseccion entre una linea y un plano
+	ilp(p1linea,p2linea,p1plano,p2plano,p3plano)
+
+////////////// Tarea libre (nota adicional)
+	Programa que utilice la calculadora geometrica que dibuje
+
+
+////////////////// SCRIPT
+
+	- Crear archivo con extencion .scr
+	- Ingresar comandos como si se hicieran en la linea de comandos
+	
+
+///////// DOS (sistema operativo basico)
+
+
+
+	********* invesigar acerca de la ejecucion automatica en AutoCAD
+
+	- Ejecutar aplicacion
+		- "C:\Program Files\Autodesk\AutoCAD 2017\acad.exe" "Dibujo.dwg" -b "C:script.scr" /product ACAD /language "es-ES"
+	- Ir al disco duro especificado
+	C:
+
+	- Archivos con comandos DOS
+		Archivos .bat
+
+	- Crear directorio
+		MD nombre 
+
+	- Llamar todos los subdirectorios en una variable f de todas las carpetas y crear subcarpetas llamas reloj
+	- For /d %%f in ("*.*") do MD "%%f\RELOJ"
+
+/////////////// Visual lisp orientado a objetos
+
+	// Cargar funciones visual lisp
+	(vl-load-com)
+
+
+// Hacer una presentación de las instrucciones vl (prezi)
+// para el 4 de abril
+// Exponer los tipos de funciones vl
+// Escojer varias funciones de cada tipo (5 o 6) e integrarlas en un ejemplo que funcione
+// Hacer un informe

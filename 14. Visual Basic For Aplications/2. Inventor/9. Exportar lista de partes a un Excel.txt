@@ -1,0 +1,38 @@
+Sub prueba()
+    
+    Dim rutaPlano As String
+    rutaPlano = "C:\Users\cesar\Desktop\CESAR\6. UNAL\2. MATERIAS\8. COMPUTACION GRAFICA\7. Proyecto\plano excavadora.dwg"
+    
+    Dim rutaExcel As String
+    rutaExcel = "C:\Users\cesar\Desktop\CESAR\6. UNAL\2. MATERIAS\8. COMPUTACION GRAFICA\7. Proyecto\lista de partes"
+    
+    Dim nombreHoja As String
+    nombreHoja = "Lista de partes"
+    
+    exportarListaDePartesComoExcel rutaPlano, rutaExcel, nombreHoja
+    
+End Sub
+
+Sub exportarListaDePartesComoExcel(rutaPlano As String, rutaExcel As String, nombreHoja As String)
+
+    ' Abrir documento en la ruta especificada
+    Dim documento As Inventor.DrawingDocument
+    Set documento = ThisApplication.Documents.Open(rutaPlano, False)
+    Debug.Print "DrawingDocument: " + documento.FullFileName
+    
+    ' Acceder a la hoja
+    Dim sheet As sheet
+    Set sheet = documento.Sheets.Item(1)
+    Debug.Print "   sheet: " + sheet.Name
+    
+    ' Acceder a la list de partes
+    Dim PartsList As PartsList
+    Set PartsList = sheet.PartsLists.Item(1)
+    Debug.Print "       PartsList: " + PartsList.Title
+    
+    ' Exportar lista de partes como Excel en la ruta especificada
+    PartsList.Export rutaExcel, kMicrosoftExcel, nombreHoja
+
+End Sub
+
+

@@ -1,0 +1,7 @@
+<!-- Etiqueta de direcciones -->
+<resources>
+
+	<!-- Etiqueta para valores String -->
+    <string name="nombre_variable">valor variable</string>
+    
+</resources>

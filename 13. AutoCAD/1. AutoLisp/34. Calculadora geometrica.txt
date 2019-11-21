@@ -1,0 +1,25 @@
+(command "_cal" "0") = Iniciar calculadora geometrica
+(cal "expresion") = calcular expresion
+
+* Expresiones de la calculadora geometrica
+
+	qua = Punto de cuadrante del circulo
+	mid = Punto medio 
+	end = Punto final 
+
+	(end + end) / 2 = Obtener punto centro entre dos puntos finales
+	vec(p1, p2) = Crear vector
+	vec1(p1, p2) = Crear vector unitario
+	nor(p1, p2, p3) = Crear un vector normal con respecto a un plano
+	dist(p1, p2) = Distancia entre dos puntos
+	ang(a,b) = Angulo entre dos puntos
+	ill(p1l1,p2l1,p1l2,p2l2) = Interseccion entre dos lineas
+	ilp(p1l,p2l,p1p,p2p,p3p) = Interseccion entre una linea y un plano
+
+
+
+
+	
+
+
+	

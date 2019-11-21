@@ -1,0 +1,16 @@
+(= <átomo> <átomo> <átomo> ...) = Comprueba la igualdad numérica
+(/= <átomo> <átomo> <átomo> ...) = Comprueba la desigualdad numérica
+
+(< <átomo> <átomo> <átomo> ...) = Comprueba la relación “menor que” entre los argumentos 
+(> <átomo> <átomo> <átomo> ...) = Comprueba la relación “mayor que” entre los argumentos 
+(<= <átomo> <átomo> <átomo> ...) = Comprueba la relación “menor o igual que” entre los argumentos 
+(>= <átomo> <átomo> <átomo> ...) = Comprueba la relación “mayor o igual que” entre los argumentos 
+
+(AND <exp> <exp> <exp> ...) = Comprueba si todos valores de una serie de expresiones son "T"
+(OR <exp> <exp> <exp> ...) = Comprueba si algun valor de una serie de expresiones es "T"
+(NOT <exp>) = Invierte el sentido de un predicado (devuelve T si su argumento es falso y Nil si es cierto)
+
+(EQ <exp> <exp>) = Comprueba si los valores están ligadas a los mismos datos
+
+(EQUAL <exp> <exp> [margen de error] ) = Comprueba si dos expresiones se evalúan con valores iguales
+ 

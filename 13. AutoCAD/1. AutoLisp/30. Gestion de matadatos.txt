@@ -1,0 +1,43 @@
+*Crear estructura de metadatos
+
+	(setq estructuraDeDatos (list
+		(CONS identificador caracteristica); Para pares punteados
+	    (list identificador caracteristica1 caracteristica2 ...); Para listas
+	    ...
+	))
+
+*Crear objeto 
+
+	(entmake estructuraDeDatos)
+
+*Modificar caracteristicas de un objeto
+
+	; Obtener estructura de datos 
+	(setq estructuraDeDatos (entget "Identificador del objeto"))
+
+	; Cambiar caracteristicas
+	(setq estructuraDeDatos (subst 
+		(cons identificador "nuevo valor") 
+		(assoc identificador estructuraDeDatos) 
+		estructuraDeDatos 
+	))
+
+	; Actualizar objeto
+	(entmod estructuraDeDatos)
+
+*Agregar caracteristicas a un objeto
+
+	; Obtener estructura de datos 
+	(setq estructuraDeDatos (entget "Identificador del objeto"))
+
+	; Agregar caracteristica
+	(setq estructuraDeDatos (APPEND 
+		estructuraDeDatos 
+		(list (cons 
+			identificador "nuevo valor")
+		)
+	))
+
+	; Actualizar objeto
+	(entmod estructuraDeDatos)
+

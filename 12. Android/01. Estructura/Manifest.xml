@@ -1,0 +1,31 @@
+<!-- version y codificado de caracteres -->
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- Manifiesto de la aplicacion -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cerciber.prueba">
+
+    <!-- Aplicacion y sus definiciones principales -->
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <!-- Definicion de las actividades de la aplicacion -->
+        <activity android:name=".MainActivity">
+
+            <!-- Definiciones de la actividad -->
+            <intent-filter>
+
+                <!-- Tipo de accion -->
+                <action android:name="android.intent.action.MAIN" />
+
+                <!-- categoria -->
+                <category android:name="android.intent.category.LAUNCHER" />
+                
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,21 @@
+/* Elemento linea */
+#div1 {
+    display: inline;
+}
+
+/* Elemento bloque */
+#div2 {
+    display: block;
+}
+/* Elemento bloque en linea */
+#div3 {
+	display: inline-block;
+}
+/* Elemento invisible (No conserba su espacio de diseño) */
+#div4 {
+	display: none;
+}
+/* Elemento invisible (Conserba su espacio de diseño) */
+#div5 {
+	visibility: hidden;
+}

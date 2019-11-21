@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.cerciber.prueba.MainActivity">
+
+    <!-- GridView = Datos en tablas -->
+        <!-- android:id = identificador del elemento -->
+        <!-- android:numColumns = Numero de columnas -->
+            <!-- "auto_fit" = Autocompletar -->
+        <!-- android:columnWidth = Ancho de columnas -->
+        <!-- android:horizontalSpacing = Espaciado horizontal -->
+        <!-- android:verticalSpacing = Espaciado vertical -->
+        <!-- android:stretchMode = Que hacer con el espacio sobrante -->
+            <!-- "columnWidth" = Las columnas absorven el espacio a partes iguales -->
+            <!-- "spacingWidth" = Los espacios entre celdas absorven el espacio a partes iguales -->
+
+    <GridView android:id="@+id/GridOpciones"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="auto_fit"
+        android:columnWidth="80px"
+        android:horizontalSpacing="1dp"
+        android:verticalSpacing="3dp"
+        android:stretchMode="columnWidth" />
+
+</RelativeLayout>

@@ -1,0 +1,64 @@
+#div1 {
+	/* Color de texto */
+    color: blue;
+}
+#div2 {
+	/* Alineación a la izquierda */
+    text-align: left;
+}
+#div3 {
+	/* Alineación al centro */
+    text-align: center;
+}
+#div4 {
+	/* Alineación a la derecha */
+    text-align: right;
+}
+#div5 {
+	/* Alineación justificada */
+    text-align: justify;
+}
+#div6 {
+	/* Decoracion linea encima el texto */
+    text-decoration: overline;
+}
+#div7 {
+	/* Decoracion linea debajo del texto */
+    text-decoration: underline;
+}
+#div8 {
+	/* Decoracion linea atravezando el texto */
+    text-decoration: line-through;
+}
+#div9 {
+	/* Transformación a mayusculas */
+    text-transform: uppercase;
+}
+#div10 {
+	/* Transformación a minusculas */
+    text-transform: lowercase;
+}
+#div11 {
+	/* Transformación capitalizar = primera letra de cada palabra en mayusculas */
+    text-transform: capitalize;
+}
+#div12 {
+	/* Sangría */
+    text-indent: 50px;
+}
+#div13 {
+	/* Espaciado entre letras */
+    letter-spacing: 10px;
+}
+#div14 {
+	/* Espaciado entre palabras */
+    word-spacing: 10px;
+}
+#div15 {
+	/* Espaciado entre lineas */
+    line-height: 0.8;
+}
+#div16 {
+	/* dirección del texto de derecha a izquierda */
+    direction: rtl;
+}

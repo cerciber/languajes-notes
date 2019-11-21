@@ -1,0 +1,34 @@
+* Reactor de archivo de dibujo
+
+	(vlr-dwg-reactor "Nombre reactor" '((:tipoReactor . funcion)))
+
+		tipoReactor:
+
+			vlr-savecomplete = reacciona cuando se guarda el dibujo
+
+		funcion:
+
+		(defun funcion(calling-reactor commandInfo)
+
+			;contenido
+
+		)
+
+* Reactor de comandos del dibujo
+
+
+	(vlr-command-reactor "Nombre reactor" '((:tipoReactor . funcion)))
+
+		tipoReactor:
+
+			vlr-commandEnded = Reacciona cuando se termina de ejecutar un comando
+			vlr-commandWillStart = Reacciona cuando va a iniciar la ejeccucion de un comando
+			vlr-commandCancelled = Reacciona cuando un comando es cancelado
+
+		funcion:
+
+		(defun funcion(calling-reactor commandInfo)
+
+			;contenido
+
+		)

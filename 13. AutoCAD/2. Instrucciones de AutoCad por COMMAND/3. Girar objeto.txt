@@ -1,0 +1,2 @@
+; Rotacion objeto1 objeto2 ... puntoBase AnguloDeRotacion
+(command "_rotate" "objeto1" "objeto2" ... "" "30,30" 60)

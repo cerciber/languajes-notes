@@ -1,0 +1,7 @@
+<!-- Etiqueta de direcciones -->
+<resources>
+
+	<!-- Etiqueta para definir dimensiones -->
+    <dimen name="nombre_dimension">valor dimension (dp)</dimen>
+
+</resources>

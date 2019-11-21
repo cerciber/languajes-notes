@@ -1,0 +1,7 @@
+- Seleccionar un objeto
+- Click derecho
+- Propiedades
+- Hipervinculo
+- Asignar ruta
+
+El objeto puede abrir archivos externos a AutoCAD

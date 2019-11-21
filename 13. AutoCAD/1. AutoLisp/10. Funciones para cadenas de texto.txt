@@ -1,0 +1,13 @@
+(READ cadena) = lee la primera parabra de una cadena de caracteres 
+
+(STRCASE cadena) = convertir a mayusculas
+(STRCASE cadena T) = convertir a minusculas
+
+(STRCAT cadena1 cadena2 cadena3 ...) = concatenar
+(STRLEN cadena) = longitud de una cadena 
+(SUBSTR cadena inicio longitud) = substring (cadena de caracteres interna)
+
+(VL-PRINC-TO-STRING dato) = representación string de cualquier objeto tipo lisp
+(VL-LIST->STRING '(num1 num2 num3 ...) ) =  Concatena los caracteres representados en una lista por sus códigos numéricos ASCII
+(VL-STRING->LIST cadena) = Convierte una cadena de caracteres en una lista de los códigos numéricos ASCII correspondientes
+ 

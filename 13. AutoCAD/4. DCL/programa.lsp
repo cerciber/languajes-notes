@@ -1,0 +1,6 @@
+(setq ruta (findfile "dibujo.dwg"))
+(setq ruta (vl-filename-directory ruta))
+(setq ruta (strcat ruta "\\14. Imagen (image).dcl"))
+(setq variable (load_dialog ruta))
+(new_dialog "dialogo1" variable)
+(start_dialog)

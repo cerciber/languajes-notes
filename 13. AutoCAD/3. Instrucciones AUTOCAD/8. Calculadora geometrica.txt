@@ -1,0 +1,2 @@
+_CAL = Abrir calculadora geometrica
+'cal = Llamar calculadora en una peticion de usuario

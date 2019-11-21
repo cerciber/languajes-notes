@@ -1,0 +1,53 @@
+\documentclass[a4paper]{article}
+\usepackage[opcion]{paquete}
+
+\title{Titulo} 
+\author{autor } 
+\date{fecha}
+
+\begin{document} 
+
+	$$ 
+	\left( % parentesis izquierdo
+	\begin{array}{alineacion} % Inicio de la matriz%
+
+		Celda11 & Celda12 & ... & Celda1N \\
+		Celda21 & Celda22 & ... & Celda2N \\
+		.
+		.
+		.
+		CeldaM1 & CeldaM2 & ... & CeldaMN \\
+
+	\end{array} % Fin de la matriz %
+	\right) % parentesis derecho
+	$$
+
+	% array %
+
+		% matrix = sin cubierta
+		% pmatrix = cubierto con parentesis
+		% bmatrix = cubierto con barras hacia adentro
+		% vmatrix = cubierto con barras 
+		% Vmatrix = cubierto con barras dobles
+
+	% alineacion %
+
+		%	l   = 	para alineacion a izquierda (left)
+		%	r 	=	para alineacion a derecha (right)
+		%	c 	=	para alineacion al centro
+		%	| 	=	produce una lınea vertical que separa dos columnas
+		%	p{longitud}	=	crea una columna de ancho determinado por el parametro longitud
+		%	@{texto} 	=	suprime el espacio entre columnas e inserta un texto en su lugar
+
+
+	% Ejemplo %
+
+	$$
+	\left( \begin{array}{lll}
+	1 & 2 & 3 \\ 4 & 5 & 6 \\ 7 & 8 & 9
+	\end{array}\right)
+	$$
+
+\end{document} 
+
+

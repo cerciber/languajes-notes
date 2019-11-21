@@ -1,0 +1,307 @@
+* Funciones 
+
+	(vl-acad-defun funcion) = Define una función de Visual Lisp como función nativa de AutoLISP.
+
+	(vl-acad-undefun función) = Deshace la definición de una función de Visual Lisp como función nativa de AutoLISP.
+
+* Listas
+
+	(vl-consp lista) = Determina si una lista existe o es nil.
+
+	(vl-every condición lista1 [lista2...]) = Examina si la condición se cumple para cada lista de argumentos.
+
+	(vl-list* objeto1 [objeto2...]) = Construye una lista con los objetos indicados.
+
+	(vl-list->string lista_ascii) = Construye una cadena de texto a partir de una lista de enteros, tomándolos como valores ASCII.
+
+	(vl-list-length lista) = Devuelve la longitud de una lista.
+
+	(vl-position símbolo lista) = Devuelve el índice de posición del elemento símbolo en la lista.
+
+	(vl-remove elemento lista) = Elimina el elemento indicado de la lista.
+
+	(vl-some función lista1 [lista2...]) = Examina si una de las listas de argumentos no hace nil la función.
+	
+	(vl-sort lista función_orden) = Devuelve una lista con los elementos de la lista indicada ordenados según la función de orden.
+
+	(vl-sort-i lista función_orden) = Devuelve una lista con los índices de posición de los elementos para que estuvieran ordenados.
+
+
+* Directorios
+
+	(vl-directory-files [directorio patrón subdirectorio]) = Devuelve una lista de los archivos del directorio 
+															 indicado o del actual. 
+															 Admite caracteres comodín en el patrón. 
+															 El modo subdirectorio puede ser: 
+															   		-1 = sólo subdirectorios 
+															   		 0 = archivos y subdirirectorios 
+															   		 1 = sólo archivos.
+
+	(vl-exe-filename) = Devuelve el camino completo del archivo ejecutable actual en Visual Lisp.
+
+	(vl-file-copy fuente destino [add]) = Copia un archivo sobre otro
+
+											add:
+												nil = sobrescribir
+												 T  = añadir
+
+	(vl-file-delete archivo) = Borra un archivo.
+
+	(vl-file-directory-p nombre) = Determina si nombre es un directorio.
+
+	(vl-file-rename antiguo nuevo) = Renombra un archivo de nombre antiguo cambiándolo a nuevo.
+
+	(vl-file-size archivo) = Devuelve el tamaño en bytes de un archivo.
+
+	(vl-file-systime archivo) = Devuelve la hora de la última modificación de archivo.
+
+	(vl-filename-base archivo) = Devuelve el nombre y extension del archivo indicado, eliminando el camino.
+
+	(vl-filename-directory archivo) = Devuelve el camino completo del archivo indicado, eliminando nombre y extensión.
+
+	(vl-filename-extension archivo) = Devuelve la extensión del archivo indicado, eliminando camino y nombre.
+
+	(vl-filename-mktemp [patrón directorio ext]) = Calcula nombre de archivo temporal indicando patrón, 
+													directorio y extensión (si no, es $VL...).
+ 
+* Inicialización de AutoLISP
+
+	(vl-init) = Equivale a inicializar AutoLISP cuando se abre o se inicia un dibujo en AutoCAD.
+
+* Impresiones en consola
+
+	(vl-prin1-to-string objeto) = Devuelve la representación impresa de un objeto AutoLISP tal como haría PRIN1.
+
+	(vl-princ-to-string objeto) = Devuelve la representación impresa de un objeto AutoLISP tal como haría PRINC.
+
+* Claves de registro de Windows
+
+	(vl-registry-delete clave [nombre]) = Borra la clave o nombre de valor indicados del registro de Windows.
+
+	(vl-registry-descendents clave [nombre]) = Devuelve una lista de descendientes de la clave o valor 
+											   indicados en el registro de Windows.
+
+	(vl-registry-read clave [nombre]) = Devuelve los datos almacenados en el registro de Windows para la clave o valor indicados.
+
+	(vl-registry-write clave [nombre datos]) = Crea una clave en el registro de Windows con el nombre y datos indicados.
+	
+* Condicionales
+	
+	(vl-member-if condición lista) = Determina si la condición se cumple para uno de los elementos de la lista.
+
+	(vl-member-if-not condición lista) = Determina si la condición no se cumple para uno de los elementos de la lista.
+
+	(vl-remove-if condición lista) = Devuelve una lista con todos los elementos de la lista indicada que fallan la condición.
+
+	(vl-remove-if-not condición lista) = Devuelve una lista con todos los elementos de la lista indicada que no fallan la condición.
+
+* Cadenas de texto
+	
+	(vl-string->list cadena) =vConvierte la cadena de texto en una lista de números con los códigos ASCII de cada carácter.
+
+	(vl-string-elt cadena posición) Devuelve el código ASCII del carácter que ocupa la posición indicada en la cadena de texto.
+
+	(vl-string-left-trim lista_car cadena) = Elimina de la cadena de texto los caracteres especificados en la lista.
+
+	(vl-string-mismatch cad1 cad2 [pos1 pos2 may]) = Devuelve la longitud del mayor trozo común entre dos textos a partir de las 
+														posiciones indicadas, pudiendo especificar si se tienen en cuenta las
+														mayúsculas.
+
+	(vl-string-position ascii cad [inicio final]) = Examina si el carácter cuyo ASCII se indica está en la cadena entre dos posiciones dadas.
+
+	(vl-string-right-trim lista_car cadena) = Elimina de la cadena los caracteres indicados en la lista desde el final de la cadena.
+
+	(vl-string-search patrón cadena [inicio]) = Localiza el patrón en la cadena indicada a partir de una posición de inicio.
+
+	(vl-string-subst nuevo antiguo cad [inicio]) Sustituye el texto antiguo por el nuevo en la cadena indicada a partir de una posición dada.
+
+	(vl-string-translate ls_fuente ls_dest cad) = Reemplaza cada carácter de una lista fuente por los de una lista destino en la cadena.
+
+	(vl-string-trim lista_car cadena) = Elimina de la cadena los caracteres indicados en la lista, desde el principio y final de la cadena.
+
+* Simbolos
+
+	(vl-symbol-name símbolo) = Devuelve una cadena con el nombre del símbolo.
+
+	(vl-symbol-value símbolo) = Devuelve el valor actual de un símbolo.
+
+	(vl-symbolp objeto) = Examina si el objeto es un símbolo.
+
+* Funciones graficas
+
+	(vlax-3D-point lista_pto x y [z]) = Crea un punto 3D de AutoCAD pudiendo especificarse una lista de punto o las coordenadas.
+
+	(vlax-add-cmd comando función [local att]) = Crea un comando a partir de una función AutoLISP, pudiendo tener un nombre local y atributos.
+
+	(vlax-curve-getArea obj_curva) = Calcula el área interior del objeto de curva.
+
+	(vlax-curve-getDistAtParam obj_curva pto) = Calcula la longitud de la curva a partir del punto indicado hasta el final.
+
+
+
+	(vlax-curve-getDistAtPoint obj_curva pto) = Calcula la longitud de la curva desde el inicio hasta el punto indicado.
+
+	(vlax-curve-getEndParam obj_curva) = Devuelve el parámetro de punto final de la curva.
+
+	(vlax-curve-getEndPoint obj_curva) = Devuelve el punto final de la curva en coordenadas de SCU.
+
+	(vlax-curve-getParamAtDist obj_curva par) = Calcula la longitud de la curva entre el inicio y el punto con el parámetro indicado.
+
+	(vlax-curve-getParamAtPoint obj_curva pto) = Devuelve el parámetro de la curva en el punto indicado.
+
+	(vlax-curve-getPointAtDist obj_curva dis) = Devuelve el punto situado a la distancia indicada, medida a lo largo de la curva 
+												desde el inicio.
+
+	(vlax-curve-getPointAtParam obj_curva par) = Devuelve el punto de la curva que tiene el parámetro indicado.
+	
+	(vlax-curve-getStartParam obj_curva) = Devuelve el primer parámetro de la curva.
+
+	(vlax-curve-getStartPoint obj_curva) = Devuelve el punto inicial de la curva en coordenadas de SCU.
+
+	(vlax-curve-isClosed obj_curva) = Determina si la curva es cerrada.
+
+	(vlax-curve-isPeriodic obj_curva) = Determina si la curva es periódica, o bien presenta un rango infinito en ambas direcciones.
+
+	(vlax-curve-isPlanar obj_curva) = Determina si la curva es plana.
+
+	(vlax-curve-getClosestPointTo obj_curva pto [prolongar]) = Devuelve el punto más cercano de la curva al punto
+																especificado, pudiéndose indicar que se tenga
+																en cuenta la prolongación de la curva por sus extremos.
+
+	(vlax-curve-getClosestPointToProjection obj_curva pto vector [prolongar]) = Devuelve el punto más cercano de la curva al punto
+																				especificado, proyectando éste en la dirección
+																				del vector indicado, pudiéndose tener en cuenta la
+																				prolongación por los extremos de la curva.
+
+	(vlax-curve-getFirstDeriv obj_curva par) = Calcula la primera derivada de la curva, en coordenadas del SCU, 
+												en el punto de parámetro indicado
+
+	(vlax-curve-getSecondDeriv obj_curva par) = Calcula la segunda derivada de la curva en coordenadas del SCU, 
+												en el punto de parámetro indicado.
+
+* Manipulación de objetos
+
+	(vlax-dump-object objeto) = Lista los métodos y propiedades existentes para el objeto indicado.
+
+	(vlax-ename->vla-object nombre_ent) = Transforma el objeto de nombre de entidad
+											indicado en un objeto VLA accesible vía ActiveX.
+
+	(vlax-erased-p objeto) = Determina si un objeto ha sido borrado.
+
+	(vlax-for símbolo colección expr1 [expr2...]) = Asigna el símbolo a cada objeto de la colección y 
+													evalúa todas las expresiones de AutoLISP.
+
+	(vlax-get objeto propiedad) = Devuelve el valor de la propiedad indicada al objeto.
+
+	(vlax-get-acad-object) = Devuelve el más alto nivel (Top Level) de la aplicación AutoCAD en la actual sesión.
+
+
+
+
+	(vlax-invoke objeto método lista) = Invoca el método indicado para un objeto, proporcionando una lista de argumentos.
+
+	(vlax-ldata-delete diccionario clave) = Borra la entrada cuya clave se indica —en un diccionario—.
+
+	(vlax-ldata-get diccionario clave [defecto]) = Devuelve los datos de un diccionario para la clave 
+													indicada. Si ésta no se halla, devuelve defecto.
+
+	(vlax-ldata-list diccionario) = Devuelve todos los datos de un diccionario.
+
+	(vlax-ldata-put diccionario clave datos) = Almacena los datos especificados en la clave indicada de un diccionario.
+
+	(vlax-ldata-test datos) = Determina si los datos indicados pueden ser guardados en la sesión actual.
+
+	(vlax-map-collection colección función) = Aplica la función indicada a todos los objetos de una colección.
+
+	(vlax-method-applicable-p objeto método) = Determina si un objeto soporta el método indicado.
+
+	(vlax-object-released-p objeto) = Determina si un objeto ha sido liberado de cualquier enlace con un objeto del dibujo.
+
+	(vlax-product-key) = Devuelve los datos de registro de producto de AutoCAD.
+
+	(vlax-property-available-p objeto prop [T]) = Determina si un objeto presenta una propiedad. Si
+													se indica T, examina si es modificable.
+
+	(vlax-put objeto prop valor) = Asigna el valor indicado a la propiedad especificada del objeto.
+
+	(vlax-read-enabled-p objeto) = Determina si un objeto puede ser leído.
+
+	(vlax-reg-app registro coms carga [nom [err]]) = Registra una aplicación: datos de producto, lista de
+														comandos, número de carga, nombre, error.
+
+	(vlax-release-object objeto) = Libera un objeto de dibujo de la variable indicada.
+
+	(vlax-remove-cmd nombre_global) = Elimina el nombre de comando del grupo de la sesión actual. Si se indica T elimina el grupo.
+
+	(vlax-tmatrix lista_de_cuatro) = Toma una lista de cuatro listas con cuatro números
+										y devuelve una matriz de transformación de 4´4.
+
+	(vlax-typeinfo-available-p objeto) = Determina si existe librería de información en Visual
+											Lisp con métodos y propiedades del objeto.
+
+	(vlax-vla-object->ename objeto) = Transforma el objeto VLA indicado en un nombre de entidad de AutoLISP.
+
+	(vlax-write-enabled-p objeto) = Determina si un objeto de dibujo puede ser modificado.
+
+* Registro de Visual lisp
+
+	(vlisp-export-symbol símbolo) = Asigna una variable nativa de AutoLISP al valor del símbolo de Visual Lisp indicado.
+
+	(vlisp-import-exsubrs ‘(nom fun1 fun2...)) = Registra las funciones indicadas del nombre de
+													aplicación ADS o ARX dentro de Visual Lisp.
+
+	(vlisp-import-symbol ‘símbolo) = Asigna un símbolo de Visual Lisp al homónimo de AutoLISP con el valor de éste.
+
+* Reacctores
+
+	(vlr-acdb-reactor datos llamadas) = Construye un objeto reactor con los datos y llamadas indicados. 
+										Cada llamada es un par (evento . función).
+
+	(vlr-add objeto) = Habilita un objeto reactor inhabilitado previamente.
+
+	(vlr-added-p objeto) = Examina si un objeto reactor se encuentra habilitado.
+
+	(vlr-beep-reaction [argumentos]) = Produce sonidos de computadora.
+
+	(vlr-current-reaction-name) = Devuelve el nombre del evento actual.
+
+	(vlr-data objeto) = Devuelve los datos específicos de aplicación asociados a un objeto reactor.
+
+	(vlr-data-set objeto datos) = Sobreescribe los datos específicos de aplicación de
+									un objeto reactor con los datos indicados.
+
+	(vlr-editor-reactor datos llamadas) = Construye un reactor Editor con los datos y llamadas indicados.
+
+	(vlr-linker-reactor datos llamadas) = Construye un reactor Linker con los datos y llamadas indicados.
+
+	(vlr-object-reactor objetos datos llamadas) = Construye un reactor Object con los objetos, datos y llamadas indicados.
+
+	(vlr-owner-add reactor objeto) = Añade el objeto indicado al reactor.
+	
+	(vlr-owner-remove reactor objeto) = Elimina el objeto indicado del reactor.
+	
+	(vlr-owners reactor) = Devuelve la lista de objetos del reactor.
+	
+	(vlr-pers reactor) = Convierte el reactor en persistente.
+	
+	(vlr-pers-p reactor) = Determina si el reactor es o no persistente.
+	
+	(vlr-pers-release reactor) = Elimina la persistencia de un reactor.
+	
+	(vlr-reaction-names tipo_reactor) = Devuelve la lista de eventos del tipo de reactor indicado.
+	
+	(vlr-reaction-set reactor evento función) = Añade o reemplaza un evento de una función en un reactor.
+	
+	(vlr-reactions reactor) = Devuelve la lista de llamadas de un reactor. Cada llamada es un par (evento . función).
+	
+	(vlr-reactors tipo_reactor) = Devuelve una lista con todos los reactor del tipo indicado.
+	
+	(vlr-remove reactor) = Inhabilita el reactor indicado.
+	
+	(vlr-remove-all reactor) = Inhabilita todos los reactores del tipo especificado.
+	
+	(vlr-trace-reaction argumentos) = Argumentos para que sean sometidos a rastreo en la ventana Trace de Visual Lisp.
+	
+	(vlr-type reactor) = Devuelve el tipo de reactor.
+	
+	(vlr-types) = Devuelve una lista con todos los tipos de reactor.

@@ -1,0 +1,26 @@
+\documentclass[a4paper]{article}
+\usepackage[opcion]{paquete}
+
+\title{Titulo} 
+\author{autor} 
+\date{fecha}
+
+\begin{document} 
+
+	\begin{equation*}
+
+		% Ecuacion alineada
+		\begin{aligned}[b]
+		primer miembro = segundo miembro
+		\end{aligned}
+
+		\qquad
+
+		% ecuacion acumulada
+		\begin{gathered}[t]
+		primer miembro = segundo miembro
+		\end{gathered}
+
+	\end{equation*}
+
+\end{document} 

@@ -1,0 +1,33 @@
+/* Posicion estatica */
+/* 		sus dimensiones son constantes*/
+#div1 {
+    position: static;
+    border: 3px solid #73AD21;
+}
+
+/* Posicion relativa */
+/* 		sus dimensiones son variables*/
+#div2 {
+    position: relative;
+    left: 30px;
+    border: 3px solid #73AD21;
+}
+/* Posicion respecto a la ventana grafica */
+/* 		sus dimensiones y su posicion no varian */
+#div3 {
+	position: fixed;
+    bottom: 0;
+    right: 0;
+    width: 300px;
+    border: 3px solid #73AD21;
+}
+/* Posicion absoluta */
+/* 		sus dimensiones y su posicion no varian en relacion a un elemento padre */
+#div4 {
+	position: absolute;
+    top: 80px;
+    right: 0;
+    width: 200px;
+    height: 100px;
+    border: 3px solid #73AD21;
+}

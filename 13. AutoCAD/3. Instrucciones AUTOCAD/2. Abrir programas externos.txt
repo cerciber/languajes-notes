@@ -1,0 +1,4 @@
+notepad = Blog de notas
+pbrush = paint
+start excel = Excel
+winword = Word

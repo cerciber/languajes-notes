@@ -1,0 +1,6 @@
+(MEMBER expresión lista) = Devuelve una lista a partir de la expresión encontrada
+(REVERSE lista) = invertir lista
+(LISTP expresión) = Comprueba si la expresion es una lista 
+(SUBST <elemento nuevo> <elemento viejo> <lista>) = Cambiar elementos en una lista
+(FOREACH <nombre-var> <lista> <expresión>) = Aplicar una expresion a cada elemento de una lista
+(ATOM <item>) = Verifica si el item no es una lista 

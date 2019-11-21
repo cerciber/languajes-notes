@@ -1,0 +1,2 @@
+ (REPEAT n <exp1> <exp2> ...) = Evalúa una serie de una o más expresiones un número "n" determinado de veces. 
+ (WHILE <test> <exp1> <exp2> ...) = Evalúa repetidamente una serie de una o más expresiones hasta que la condición sea nil

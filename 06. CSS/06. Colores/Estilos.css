@@ -1,0 +1,12 @@
+#div1 {
+	/* Color por nombre */
+    background-color:red;
+}
+#div2 {
+	/* Color por codificacion red green blue */
+    background-color:rgb(255, 0, 0);
+}
+#div3 {
+	/* Color por codificacion hexagecimal */
+    background-color:#FF0000;
+}

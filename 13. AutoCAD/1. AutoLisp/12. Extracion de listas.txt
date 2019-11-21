@@ -1,0 +1,18 @@
+(CAR lista) = Extrae el primer elemento de la lista
+(CDR lista) = Elimina el primer elemento de la lista
+
+AutoLISP permite concatenar las funciones CAR y CDR hasta en cuatro niveles. Las siguientes son
+funciones válidas.
+Cada a representa una llamada a CAR y cada d representa una llamada a CDR
+
+	CAAAAR	CADAAR 	CDAAAR 	CDDAAR
+	CAAADR 	CADADR 	CDAADR 	CDDADR
+	CAAAR 	CADAR 	CDAAR 	CDDAR
+	CAADAR 	CADDAR 	CDADAR 	CDDDAR
+	CAADDR 	CADDDR 	CDADDR 	CDDDDR
+	CAADR 	CADDR 	CDADR 	CDDDR
+	CAAR 	CADR 	CDAR 	CDDR 
+
+ (LAST lista) = Extrae el ultimo elemento de la lista
+ (NTH posicion lista) = Extrae un elemento de una lista a partir de especificar su posición en ella (inicia en 0) 
+ (ASSOC elemento listaDeAsociaciones) = Localiza sublistas en una lista de asociaciones utilizando un elemento como palabra clave 
