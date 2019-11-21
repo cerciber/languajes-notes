@@ -1,6 +1,0 @@
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\3. C#\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.exe.config
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\3. C#\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.exe
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\3. C#\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.pdb
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\3. C#\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.csprojResolveAssemblyReference.cache
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\3. C#\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.exe
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\3. C#\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.pdb

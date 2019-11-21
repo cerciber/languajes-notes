@@ -1,9 +1,0 @@
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.exe.config
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.exe
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.pdb
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\bin\Debug\prueba.xml
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.Resources.resources
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.vbproj.GenerateResource.Cache
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.exe
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.xml
-C:\Users\cesar\Desktop\CESAR\4. PROGRAMACION\1. CONCEPTOS\4. Visual Basic\0. Proyecto de pruebas\prueba\prueba\obj\Debug\prueba.pdb
