@@ -57,8 +57,10 @@ dataFrame.corr()									# Obtener dataFrame de coeficientes de coorelación de 
 dataFrame[columna].unique()							# Obtener valores sin repetición de una columna
 dataFrame.isnull().sum()			# Contar el numero de datos nulos en cada columna
 dataFrame.notnull().sum()			# Contar el numero de datos no nulos con cada columna
+serie.rolling(n).mean()				# Obtener una serie de las medias de los n datos anteriores al dato actual
 
 # Agrupación de datos
 grupos = dataFrame.groupby(columnas, as_index=False).mean()	# Agrupar por las columnas especificadas retornando la media los registros
 dataFrame.pivot(col1, col2)									# Obtener tabla de grupos de clasificación agrupando por dos columnas
 grupos.get_group((col1, col2, colN))						# Obtener grupo especificado por los valores de las columnas 
+

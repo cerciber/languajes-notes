@@ -32,6 +32,7 @@ set(conjunto)      # Forma 2
 
 # Retornar un conjunto con una union
 conjunto.union(conjunto2)
+conjunto | conjunto2
 
 # Actualizar conjunto con una union
 conjunto.update(conjunto2)
@@ -45,12 +46,14 @@ conjunto.intersection_update(conjunto2)
 
 # Retornar un conjunto con una diferencia
 conjunto.difference(conjunto2)
+conjunto - conjunto2
 
 # Actualizar conjunto con una diferencia
 conjunto.difference_update(conjunto2)
 
 # Retornar un conjunto con una diferencia simetrica
 conjunto.symmetric_difference(conjunto2)
+conjunto ^ conjunto2
 
 # Actualizar conjunto con una diferencia simetrica
 conjunto.symmetric_difference_update(conjunto2)

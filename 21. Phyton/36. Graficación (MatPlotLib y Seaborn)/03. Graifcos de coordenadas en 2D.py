@@ -11,8 +11,8 @@ plt.plot([x1, x2, xN], [[y11, y12, y1M], [y21, y22, y2M], [yN1, yN2, yNM]])		# C
 
 # Crear grafico de coordenadas 2D para DataFrames
 dataFrame.plot()								# Crear grafico de lineas para un dataFrame (Crea una función para cada columna numerica y sus etiquetas)
-dataFrame.plot(kind='line')						# Crear grafico de lineas para un dataFrame
-dataFrame.plot(kind='bar')						# Crear grafico de barras para un dataFrame
+dataFrame.plot(kind='line')						# Crear grafico de lineas para un dataFrame (Crea una función para cada columna numerica y sus etiquetas)
+dataFrame.plot(title='titulo');					# Graficar DataFrame con el titulo especificado
 
 # Personalización del grafico
 plt.axis([x_o, x_f, y_o, y_f])								# Establecer longitud de los ejes

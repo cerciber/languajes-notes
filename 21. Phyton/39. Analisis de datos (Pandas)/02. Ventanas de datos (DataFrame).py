@@ -1,13 +1,34 @@
 # importar libreria de analisis de datos (Pandas)
 import pandas as pd
 
-# Crear ventana de datos (DataFrame)
+# Crear DataFrame con listas
 data = [[val11, val12, val1N], 
 		[val21, val22, val2N], 
 		[valM1, valM2, valMN]]
 rows = [row1, row2, rowM]
 cols = [col1, col2, colN]
-dataFrame = pd.DataFrame(data, rows, cols)
+dataFrame = pd.DataFrame(data)					# Sin nomnres de filas ni columnas
+dataFrame = pd.DataFrame(data, columns=cols)	# Con nombres de columnas
+dataFrame = pd.DataFrame(data, index=rows)		# Con nombre de filas
+dataFrame = pd.DataFrame(data, rows, cols)		# Con nombres de filas y columnas
+
+# Crear dataFrame con un diccionario
+dataFrame = pd.DataFrame({   
+    'col1': [val11, val21, valM1],
+    'col2': [val12, val22, valM2],
+    'colN': [val1N, val2N, valMN]
+})
+
+# Crear una serie
+serie = pd.Series([val1, val2, valN])								# Con nombres
+serie = pd.Series([val1, val2, valN], index=[row1, row2, rowN])		# Sin nombres
+
+# Crear DataFrame a partir de series
+dataFrame = pd.DataFrame({   
+    'col1': serie1,
+    'col2': serie2,
+    'colN': serieN
+})
 
 # Nombrar filas y columnas
 dataFrame.columns.name = 'nombre'			# Nombrar columnas
