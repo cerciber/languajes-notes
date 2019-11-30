@@ -1,6 +1,7 @@
 
 # Importar componentes de la libreria de Quantopian
 import quantopian.algorithm as algo
+import quantopian.optimize as opt
 
 # Inicializar (Se llama exactamente una vez cuando el algoritmo comienza a ejecutarse)
 def initialize(context):

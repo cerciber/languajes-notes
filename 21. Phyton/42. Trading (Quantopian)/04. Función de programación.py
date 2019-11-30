@@ -4,14 +4,10 @@ import quantopian.algorithm as algo
 
 # Función de programación de eventos (Permite hacer rebalanceo cada cierto periodo de tiempo)
 algo.schedule_function(                      
-    rebalance,                                # Función de Rebalanceo
+    funcion,                                # Función a programar
     date_rule=regla_de_fecha,                 # Regla de fecha
     time_rule=regla_de_hora                   # Regla de hora
 )
-
-# Fucnión de rebalanceo
-def rebalance(context, data):
-    # Contenido
 
 # Reglas de fecha
 algo.date_rules.every_day()                     # Cada dia

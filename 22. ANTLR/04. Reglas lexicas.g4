@@ -4,6 +4,9 @@
 // Caso general
 ANTECEDENTE: expReg;						// Expresion regular
 
+// Caso auxiliar
+fragment ANTECEDENTE: expReg;				// Expresion regular
+
 // Expresiones regulares simples
 ANTECEDENTE: 'texto';						// Token fijo
 ANTECEDENTE: 'c_o'..'c_f';					// Rango entre 2 caracteres (c_o: caracter inicial, c_f: caracter final)

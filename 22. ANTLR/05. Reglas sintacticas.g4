@@ -4,5 +4,5 @@
 // Regla simple
 antecedente: consecuente;	
 
-// Regla combianda
+// Regla combianda 
 antecedente: consecuente1 | consecuente2 | consecuenteN;	

@@ -14,7 +14,7 @@ def initialize(context):
     )
     # Contenido
     algo.attach_pipeline(           # Agregar tuberia                       
-        tuberia(),                      # Función de la tuberia
+        tuberia(context),               # Función de la tuberia
         'nombre_tuberia'                # Nombre que identifica la tuberia
     )
     # Contenido
@@ -30,3 +30,8 @@ def rebalance(context, data):
     # Contenido 
     algo.order_optimal_portfolio(objective, constraints)    # Rebalancear segun los objetivos y restricciones especificadas
     # Contenido 
+
+# Tuberia
+def tuberia(context):
+    # Contenido 
+

@@ -8,22 +8,22 @@ def tuberia():
 	# Contenido
     return Pipeline(
 		columns={			# Asignación de columnas
-        	'text1': dato1,
-        	'text2': dato2,
-        	'textN': datoN
+        	'nombre1': columna1,
+        	'nombre2': columna2,
+        	'nombreN': columnaN
     	}
 	)
 
-# Definir tuberia con un universo de referencia
+# Definir tuberia con un filtro 
 def tuberia():
 	# Contenido
     return Pipeline(
 		columns={			# Asignación de columnas
-        	'text1': dato1,
-        	'text2': dato2,
-        	'textN': datoN
+        	'nombre1': columna1,
+        	'nombre2': columna2,
+        	'nombreN': columnaN
     	},
-    	screen=universo_base
+    	screen=filtro
 	)
 
 # Ejecutar tuberia en el periodo de tiempo especificado
@@ -32,5 +32,6 @@ dataFrame = run_pipeline(
     start='fecha_inicio',		# 'AAAA-MM-DD'
     end='fecha_fin',			# 'AAAA-MM-DD'
 )
+
 
 

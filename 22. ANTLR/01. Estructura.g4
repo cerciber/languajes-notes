@@ -26,3 +26,8 @@ ANTECEDENTE_n: consecuenteN;
 antecedente_1: consecuente_1;	
 antecedente_2: consecuente_2;	
 antecedente_N: consecuente_N;	
+
+//  Fragmentos (Rglas lexicas auxiliares)
+fragment ANTECEDENTE_1: consecuente1;	
+fragment ANTECEDENTE_2: consecuente2;	
+fragment ANTECEDENTE_n: consecuenteN;	
