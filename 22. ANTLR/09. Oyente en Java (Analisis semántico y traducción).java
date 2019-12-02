@@ -26,18 +26,20 @@ public class Clase {
         ParseTreeWalker walker = new ParseTreeWalker();
 
         // Realizar recorrido con las acciones de traducción de la clase en la gramatica dada
-        walker.walk(new Traductor(), tree);
+        walker.walk(new Oyente(), tree);
 
     }
 }
 
-// Clase traductor (NombreGramatica + BaseListener)
-public class Traductor extends NombreGramaticaBaseListener {
+// Clase Oyente (NombreGramatica + BaseListener)
+public class Oyente extends NombreGramaticaBaseListener {
 
 	// Evento al entrar a una regla (enter + nombre de la regla de la gramatica) (NombreGramatica + Parser. + nombre de la regla de la gramatica + Context)
     @Override public void enterNombreRegla(NombreGramaticaParser.NombreReglaContext ctx) {
     	// Acciones
         ctx.getChild(pos)   // Obtener hijo en la posición especificada 
+        // Acciones
+        StructFileGrammarLexer.NOMBRE_TOKEN;     // Obtener identificador de un token
         // Acciones
     }
 
@@ -46,6 +48,8 @@ public class Traductor extends NombreGramaticaBaseListener {
     	// Acciones
         ctx.getChild(pos)   // Obtener hijo en la posición especificada 
         // Acciones
+        StructFileGrammarLexer.NOMBRE_TOKEN;     // Obtener identificador de un token
+        // Acciones
     }
 
     // Evento al entrar a cualquier regla 
@@ -53,12 +57,16 @@ public class Traductor extends NombreGramaticaBaseListener {
     	// Acciones
         ctx.getChild(pos)   // Obtener hijo en la posición especificada 
         // Acciones
+        StructFileGrammarLexer.NOMBRE_TOKEN;     // Obtener identificador de un token
+        // Acciones
     }
 
     // Evento al salir de cualquier regla 
     @Override public void exitEveryRule(ParserRuleContext ctx) { 
     	// Acciones
         ctx.getChild(pos)   // Obtener hijo en la posición especificada 
+        // Acciones
+        StructFileGrammarLexer.NOMBRE_TOKEN;     // Obtener identificador de un token
         // Acciones
     }
 
@@ -68,11 +76,15 @@ public class Traductor extends NombreGramaticaBaseListener {
         node.getSymbol();               // Obtener token
         node.getSymbol().getText();     // Obtener texto
         // Acciones
+        StructFileGrammarLexer.NOMBRE_TOKEN;     // Obtener identificador de un token
+        // Acciones
     }
 
     // Evento al visitar un nodo con error
     @Override public void visitErrorNode(ErrorNode node) { 
     	// Acciones
+        StructFileGrammarLexer.NOMBRE_TOKEN;     // Obtener identificador de un token
+        // Acciones
     }
 
 }
