@@ -3,7 +3,7 @@
 # Crear una cadena
 cadena = "abcdefghijklmnopqrstuvwxyz"		# Forma 1
 cadena = 'abcdefghijklmnopqrstuvwxyz'		# Forma 2
-cadena = r'abcdefghijklmnopqrstuvwxyz'		# Forma 3 (Sin tomar caracteres especiales)
+cadena = r'abcdefghijklm\nnopqrstuvwxyz'	# Forma 3 (Sin tomar caracteres especiales)
 
 # Obtener un elemento de la cadena en la posición especificada
 elemento = cadena[posicion]
@@ -28,10 +28,10 @@ cadena = ''.join(lista)
 del cadena
 
 # Concatenar cadenas
-cadena == cadena1 + cadena2
+cadena = cadena1 + cadena2
 
 # Replicar cadena el numero especificado de veces
-cadena == cadena1 * num
+cadena = cadena1 * num
 
 # Longitud de la cadena
 len(cadena)

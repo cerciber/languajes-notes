@@ -14,7 +14,6 @@ public class Clase {
         lista.add("Elemento");
 
         // Añade el elemento al ArrayList en la posición 'n'
-        int n = 0;
         lista.add(n, "Elemento 2");
 
         // Devuelve el numero de elementos del ArrayList

@@ -14,7 +14,7 @@ class Clase:
         # contenido
 
     # Metodo constructor con atributos
-    def __init__(atributo1, atributo2, atributoN):
+    def __init__(self, atributo1, atributo2, atributoN):
         # Contendio
 
     # Metodo constructor con asignación a variables globales

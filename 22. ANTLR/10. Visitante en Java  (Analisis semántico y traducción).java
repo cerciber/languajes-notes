@@ -37,19 +37,45 @@ public class Visitante extends NombreGramaticaBaseVisitor {
 	// Evento al visitar una regla (visit + nombre de la regla de la gramatica) (NombreGramatica + Parser. + nombre de la regla de la gramatica + Context)
     @Override public tipoRetorno visitNombreRegla(NombreGramaticaParser.NombreReglaContext ctx) {
     	// Acciones
-        ctx.visitChildren(pos)                      // Visitar hijo
+        ctx.visitChildren(pos)                              // Visitar hijo
         // Acciones
-        StructFileGrammarLexer.NOMBRE_TOKEN;        // Obtener identificador de un token
+        StructFileGrammarLexer.NOMBRE_TOKEN;                                        // Obtener identificador de un token por variable
         // Acciones
-        ctx.NOMBRE_TOKEN().getSymbol();             // Obtener token
+        Arrays.asList(StructFileGrammarLexer.ruleNames).indexOf("NOMBRE_TOKEN");    // Obtener identificador de un token por texto
         // Acciones
-        ctx.NOMBRE_TOKEN().getSymbol().getText();   // Obtener texto del token
+        StructFileGrammarLexer.VOCABULARY.getSymbolicName(id_token);    // Obtener nombre de un token
         // Acciones
-        visit(ctx.nombreRegla());                   // Obtener retorno de una regla
+        StructFileGrammarLexer.VOCABULARY.getLiteralName(id_token);     // Obtener simbolo de un token (entre comillas simples)
         // Acciones
-        ctx.start                                   // Obtener primer token de una regla
+        ctx.NOMBRE_TOKEN().getSymbol();                     // Obtener token
         // Acciones
-        ctx.stop                                    // Obtener ultimo token de una regla
+        ctx.NOMBRE_TOKEN().getSymbol().getText();           // Obtener texto del token
+        // Acciones
+        ctx.NOMBRE_TOKEN().getSymbol().getType();           // Obtener tipo (ID) del token
+        // acciones
+        visit(ctx.nombreRegla());                           // Obtener retorno de una regla (sin repeticiones en la regla)
+        // Acciones
+        visit(ctx.nombreRegla(num));                        // Obtener retorno de una regla (Con repeticiones en la regla, incluyrendo estrella de kleen)
+        // Acciones
+        ctx.getText();                                      // Obtener valor de una regla
+        // Acciones
+        ctx.start                                           // Obtener primer token de una regla
+        // Acciones
+        ctx.stop                                            // Obtener ultimo token de una regla
+        // Acciones
+        ctx.NOMBRE_TOKEN() == null                          // Verificar si un token tiene valor
+        // Acciones
+        ctx.nombreRegla() == null                           // Verificar si una regla tiene valor (sin repeticiones en la regla)
+        // Acciones
+        ctx.nombreRegla(num) == null                        // Verificar si una regla tiene valor (Con repeticiones en la regla)
+        // Acciones
+        ctx.start.getLine()                                 // Obtener posición de la linea inicial de la regla
+        // Acciones
+        ctx.start.getCharPositionInLine()                   // Obtener posición de la columna inicial de la regla
+        // Acciones
+        ctx.stop.getLine()                                  // Obtener posición de la linea final de la regla
+        // Acciones
+        ctx.stop.getCharPositionInLine()                    // Obtener posición de la columna  final de la regla
         // Acciones
     }
 
