@@ -14,6 +14,8 @@ tupla = re.search(expresion_regular, texto).span()			# Obtener una tupla con la 
 lista = re.split(expresion_regular, texto)					# Separar cadena por cada coincidencia
 lista = re.split(expresion_regular, texto, n)				# Separar cadena por las primeras n coincidencias
 
-# Reemplazar coincidencias por otra expresion en una cadena
+# Reemplazar coincidencias por otra expresion en una cadena 
+# - En exp_reg_o se crea un indicador por cada expresión encerrada entre parentesis
+# - En exp_reg_f se llama cada indicador con '\numero del indicador'
 lista = re.sub(exp_reg_o, exp_reg_f, texto)					# Remplazar cadena por cada coincidencia
 lista = re.sub(exp_reg_o, exp_reg_f, texto, n)				# Remplazar cadena por las primeras n coincidencias
