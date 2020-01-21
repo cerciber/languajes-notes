@@ -33,6 +33,16 @@ for caracter in cadena:
 	# Acciones
 
 # Ciclo for en una linea
-expresion for elemento in lista 								# En una lista
-expresion for elemento_1, elemento_2, elemento_N in lista2D		# En una lista 2D
-expresion for elemento in cadena 								# En una cadena
+[expresion for elemento in lista] 								# En una lista
+[expresion for elemento_1, elemento_2, elemento_N in lista2D]	# En una lista 2D
+[expresion for elemento in cadena] 								# En una cadena
+
+# Ciclo for en una linea con if
+[expresion for elemento in lista if condicion] 								# En una lista
+[expresion for elemento_1, elemento_2, elemento_N in lista2D if condicion]	# En una lista 2D
+[expresion for elemento in cadena if condicion] 							# En una cadena
+
+# Ciclo for en una linea con if else
+[expVerdadera if condicion else expFalsa for elemento in lista] 								# En una lista
+[expVerdadera if condicion else expFalsa for elemento_1, elemento_2, elemento_N in lista2D]		# En una lista 2D
+[expVerdadera if condicion else expFalsa for elemento in cadena] 								# En una cadena

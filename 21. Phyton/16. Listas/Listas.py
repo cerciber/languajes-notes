@@ -4,6 +4,10 @@
 lista = [1, "HOLA", 3, 4.0, 5, True, 7.6, 'Mundo']			# Forma 1
 lista = list((1, "HOLA", 3, 4.0, 5, True, 7.6, 'Mundo'))	# Forma 2
 
+# Crear una lista a partir de un ciclo
+lista2 = [elementoLista2 for elemento in lista] 								# En una lista
+lista2 = [elementoLista2 for elemento_1, elemento_2, elemento_N in lista2D]		# En una lista 2D
+
 # Obtener un elemento de la lista en la posición especificada
 elemento = lista[posicion]
 

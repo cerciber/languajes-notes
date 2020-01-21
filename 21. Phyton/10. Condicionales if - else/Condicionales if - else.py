@@ -15,3 +15,7 @@ elif condicion2:
     # acción al ser verdadera la condición 2 
 else:
     # acción al ser falsas las condiciónes anteriores 
+
+# if - else de una linea
+varaible = expVerdadera if condicion else expFalsa
+
