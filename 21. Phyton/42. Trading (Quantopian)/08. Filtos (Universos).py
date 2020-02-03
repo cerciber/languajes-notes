@@ -10,7 +10,7 @@
 #		- Para las empresas con más de una clase de acciones, elija la acción más líquida
 # 		- Las clases de acciones pertenecientes a la misma empresa se indican mediante un común primary_share_class_id
 # 		- La liquidez se mide utilizando el volumen medio diario en dólares de 200 días.
-# 		- Las acciones sin a primary_share_class_idse excluyen automáticamente.
+# 		- Las acciones sin a primary_share_class_id se excluyen automáticamente.
 # - Fase 3
 # 		- La acción debe tener un volumen medio diario en dólares de 200 días superior a 2.5 millones de dólares.
 # 		- La acción debe tener una capitalización de mercado promedio móvil de al menos 350 millones de dólares en los últimos 20 días.

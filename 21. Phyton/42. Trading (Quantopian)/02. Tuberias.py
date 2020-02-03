@@ -1,7 +1,6 @@
 # Importar objetos para tuberias de Quantopian
 from quantopian.pipeline import Pipeline
-from quantopian.pipeline.data import USEquityPricing
-from quantopian.pipeline.experimental import QTradableStocksUS
+from quantopian.research import run_pipeline
 
 # Definir tuberia 
 def tuberia():

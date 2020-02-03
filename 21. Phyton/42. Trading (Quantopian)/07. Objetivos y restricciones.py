@@ -25,10 +25,10 @@ def rebalance(context, data):
     # Objetivo: Maximizar el alhpa para una serie de alphas (Nivel en el que se consigue superar al mercado durante un periodo de tiempo)
     objective = opt.MaximizeAlpha(serie)
 
-    # Restricción: Limitar limita la exposición bruta de la inversión (Donde 1 es el 100%)
+    # Restricción: Limitar la exposición bruta de la inversión (Donde 1 es el 100%)
     constraint = opt.MaxGrossExposure(valor)
 
-    # Restricción: Limitar limita la exposición neta de la inversión (Donde 1 es el 100%)
+    # Restricción: Limitar la exposición neta de la inversión (Donde 1 es el 100%)
     constraint = opt.NetExposure(minimo, maximo)
 
     # Restricción: Limitar la cantidad de dinero que se invierte en una sola acción (Donde 1 es el 100%)
