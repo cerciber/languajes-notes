@@ -1,0 +1,38 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+	</head>
+<body>
+	<script type="text/javascript">
+
+		var objeto = {
+
+		    atributo1:"Valor 1",
+		    atributo2:"Valor 2",
+		    atributo3:"Valor 3",
+		    atributo4:"Valor 4",
+
+		    funcion1 : function() {
+		       document.write("valor función 1<br>");
+		    },
+		    funcion2 : function() {
+		       document.write("valor función 2<br>");
+		    }
+
+		};
+
+		document.write(objeto.atributo1+"<br>");
+		document.write(objeto.atributo2+"<br>");
+		document.write(objeto.atributo3+"<br>");
+		document.write(objeto.atributo4+"<br>");
+		document.write(objeto["atributo1"]+"<br>");
+		document.write(objeto["atributo2"]+"<br>");
+		document.write(objeto["atributo3"]+"<br>");
+		document.write(objeto["atributo4"]+"<br>");
+
+		objeto.funcion1();
+		objeto.funcion2();
+		
+	</script>
+</body> 
