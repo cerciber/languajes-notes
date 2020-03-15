@@ -1,1 +1,14 @@
-console.log("Hola mundo");
+
+Error;
+
+EvalError;
+
+RangeError;
+
+ReferenceError;
+
+SyntaxError;
+
+TypeError;
+
+URIError;

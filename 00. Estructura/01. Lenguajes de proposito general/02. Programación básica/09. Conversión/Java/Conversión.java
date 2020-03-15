@@ -19,7 +19,7 @@ public class Clase {
         
         // byte
         byte variable1 = valor;
-        boolean variable2  = (variable1 == 1);          // byte a boolean
+        boolean variable2  = (variable1 != 0);          // byte a boolean
         byte variable2 = variable1;                     // byte a byte
         char variable2 = (char) variable1;              // byte a char
         short variable2 = (short) variable1;            // byte a short
@@ -31,7 +31,7 @@ public class Clase {
         
         // char
         char variable1 = valor;
-        boolean variable2 = (variable1 == 1);           // char a boolean
+        boolean variable2 = (variable1 != 0);           // char a boolean
         byte variable2 = (byte) variable1;              // char a byte
         char variable2 = (char) variable1;              // char a char
         short variable2 = (short) variable1;            // char a short
@@ -43,7 +43,7 @@ public class Clase {
         
         // short
         short variable1 = valor;
-        boolean variable2 = (variable1 == 1);           // short a boolean
+        boolean variable2 = (variable1 != 0);           // short a boolean
         byte variable2 = (byte) variable1;              // short a byte
         char variable2 = (char) variable1;              // short a char
         short variable2 = (short) variable1;            // short a short
@@ -55,7 +55,7 @@ public class Clase {
 
         // int
         int variable1 = valor;
-        boolean variable2 = (variable1 == 1);         // int a boolean
+        boolean variable2 = (variable1 != 0);         // int a boolean
         byte variable2 = (byte) variable1;            // int a byte
         char variable2 = (char) variable1;            // int a char
         short variable2 = (short) variable1;          // int a short
@@ -67,7 +67,7 @@ public class Clase {
         
         // long
         long variable1 = valor;
-        boolean variable2 = (variable1 == 1);           // long a boolean
+        boolean variable2 = (variable1 != 0);           // long a boolean
         byte variable2 = (byte) variable1;              // long a byte
         char variable2 = (char) variable1;              // long a char
         short variable2 = (short) variable1;            // long a short
@@ -79,7 +79,7 @@ public class Clase {
 
         // float
         float variable1 = valor;
-        boolean variable2 = (variable1 == 1);           // float a boolean
+        boolean variable2 = (variable1 != 0);           // float a boolean
         byte variable2 = (byte) variable1;              // float a byte
         char variable2 = (char) variable1;              // float a char
         short variable2 = (short) variable1;            // float a short
@@ -91,7 +91,7 @@ public class Clase {
 
         // double
         double variable1 = valor;
-        boolean variable2 = (variable1 == 1);           // double a boolean
+        boolean variable2 = (variable1 != 0);           // double a boolean
         byte variable2 = (byte) variable1;              // double a byte
         char variable2 = (char) variable1;              // double a char
         short variable2 = (short) variable1;            // double a short
@@ -103,7 +103,7 @@ public class Clase {
 
         // string
         String variable1 = valor;                       
-        boolean vBoolean = ("1".equals(variable1));     // string a boolean
+        boolean vBoolean = (!"".equals(variable1));     // string a boolean
         byte vByte = Byte.valueOf(variable1);           // string a byte
         char vChar = variable1.charAt(0);               // string a char
         short vShort = Short.valueOf(variable1);        // string a short

@@ -3,7 +3,8 @@ package prueba;
 public class Prueba {
 
 	// Creación
-    static final double CONSTANTE = 3.1415;
+    static final double CONSTANTE = valor;							// Creación simple	
+    static final double CONS1 = val1, CONS2 = val1, CONSN = valN;	// Creación multiple
 
     public static void main(String[] args) {
 

@@ -6,6 +6,9 @@ public class TiposDeDatos {
         
         //Caracter simple de 2 bytes
         char vChar = 'a';
+
+        // Caracter vacio
+        NO SOPORTADO
         
     }
     

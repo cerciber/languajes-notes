@@ -10,10 +10,11 @@ public class TiposDeDatos {
         // Asignar elementos
         cadena = valor;													// Asignar cadena
         cadena = cadena.substring(0,pos)+'c'+cadena.substring(pos+1);	// Asignar caracter
+        cadena = null;                                                  // Asignar valor vacio
 
         // Obtener elementos
         String cadena2 = cadena;					// Obtener cadena
-        char caracter = asd.charAt(posición);		// Obtener caracter en la posición especificada
+        char caracter = cadena.charAt(posición);	// Obtener caracter en la posición especificada
 
         // Información
         cadena.length();							// Longitud de la cadena

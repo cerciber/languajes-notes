@@ -3,8 +3,13 @@ package prueba;
 
 public class Prueba {
 
-    // Creación
+    // Creación con parametros limitados
     public static void funcion(tipo var1, tipo var2, tipo varN) {
+        // Contenido
+    }
+
+    // Creación con parametros ilimitados
+    public static void funcion(tipo ...variables) {
         // Contenido
     }
 

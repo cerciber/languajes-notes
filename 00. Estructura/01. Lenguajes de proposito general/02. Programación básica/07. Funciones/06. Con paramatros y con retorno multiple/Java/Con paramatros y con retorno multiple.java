@@ -3,8 +3,14 @@ package prueba;
 
 public class Prueba {
 
-    // Creación
+    // Creación con parametros limitados
     public static Object[] funcion(tipo var1, tipo var2, tipo varN) {
+        // Contenido
+        return new Object[]{valor1, valor2, valorN};
+    }
+
+    // Creación con parametros ilimitados
+    public static Object[] funcion(tipo ...variables) {
         // Contenido
         return new Object[]{valor1, valor2, valorN};
     }

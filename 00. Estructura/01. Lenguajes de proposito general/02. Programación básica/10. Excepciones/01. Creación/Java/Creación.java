@@ -1,33 +1,33 @@
 package prueba;
 
 // Crear excepción
-public class MyException extends Exception {
+public class MiExcepcion extends Exception {
     // Contenido
 }
 
 // Crear excepción sobreescribiendo los constructores
-public class MyException extends Exception {
+public class MiExcepcion extends Exception {
 
     // Sin mensaje y sin error de causa
-    public MyException() {
+    public MiExcepcion() {
         super();
         // Contenido
     }
     
     // Con mensaje y sin error de causa
-    public MyException(String message) {
+    public MiExcepcion(String message) {
         super(message);
         // Contenido
     }
 
     // Con mensaje y con error de causa
-    public MyException(String message, Throwable cause) {
+    public MiExcepcion(String message, Throwable cause) {
         super(message, cause);
         // Contenido
     }
 
     // Sin mensaje y con error de causa
-    public MyException(Throwable cause) {
+    public MiExcepcion(Throwable cause) {
         super(cause);
         // Contenido
     }

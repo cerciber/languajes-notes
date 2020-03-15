@@ -31,7 +31,6 @@ public class Prueba {
         // Error al convertir cadena a numero (Hereda de IllegalArgumentException)
         NumberFormatException exception;
         
-
     }
     
 }

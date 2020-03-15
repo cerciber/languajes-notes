@@ -27,10 +27,10 @@ public class Prueba {
         arreglo[pos1][pos2][posN] = elemento;   // Asignar elemento    
         
         // Obtener elementos
-        tipo[][][] arreglo2 = arreglo;                  // Obtener arreglo (o subarreglo en el nivel de profundidad 0)
-        tipo[][] arreglo2 = arreglo[pos1];              // Obtener subarreglo en el nivel de profundidad 1
-        tipo[] arreglo2 = arreglo[pos1][pos2];          // Obtener subarreglo en el nivel de profundidad 2
-        tipo elemento = arreglo[pos1][pos2][posN];      // Obtener elemento (o subarreglo en el nivel de profundidad N)
+        /*Contexto*/ arreglo /*Contexto*/                       // Obtener arreglo (o subarreglo en el nivel de profundidad 0)
+        /*Contexto*/ arreglo[pos1] /*Contexto*/                 // Obtener subarreglo en el nivel de profundidad 1
+        /*Contexto*/ arreglo[pos1][pos2] /*Contexto*/           // Obtener subarreglo en el nivel de profundidad 2
+        /*Contexto*/ arreglo[pos1][pos2][posN] /*Contexto*/     // Obtener elemento (o subarreglo en el nivel de profundidad N)
 
         // Información
         arreglo.length;                                     // Longitud en Y

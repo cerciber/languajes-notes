@@ -17,8 +17,8 @@ public class Prueba {
         arreglo[posición] = elemento;       // Asignar elemento    
         
         // Obtener elementos
-        tipo[] arreglo2 = arreglo;          // Obtener arreglo
-        tipo elemento = arreglo[posición];  // Obtener elemento
+        /*Contexto*/ arreglo /*Contexto*/               // Obtener arreglo
+        /*Contexto*/ arreglo[posición] /*Contexto*/     // Obtener elemento
 
         // Información
         arreglo.length;             // Longitud

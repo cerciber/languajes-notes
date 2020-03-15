@@ -19,9 +19,9 @@ public class Prueba {
         arreglo[posY][posX] = elemento;         // Asignar elemento    
         
         // Obtener elementos
-        tipo[][] arreglo2 = arreglo;            // Obtener arreglo
-        tipo[] arreglo2 = arreglo[posY];        // Obtener fila
-        tipo elemento = arreglo[posY][posX];    // Obtener elemento
+        /*Contexto*/ arreglo /*Contexto*/               // Obtener arreglo
+        /*Contexto*/ arreglo[posY] /*Contexto*/         // Obtener fila
+        /*Contexto*/ arreglo[posY][posX] /*Contexto*/   // Obtener elemento
 
         // Información
         arreglo.length;                                     // Longitud en Y

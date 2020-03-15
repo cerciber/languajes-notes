@@ -1,15 +1,8 @@
-/* Paquete (Carpeta) */
-package paquete;
 
-/* Importaciones */
-import importacion.importacion;
+// Sentencias
+SENTENCIA1;
+SENTENCIA2;
+SENTENCIAN;
 
-/* Clase */
-public class Clase {
-
-    /* Metodo principal (Inicia el programa) */
-    public static void main(String[] args) {
-        // Contenido
-    }
-    
-}
+// Expresiones en una linea (retorna el ultimo valor)
+EXPRESION1, EXPRESION2, EXPRESION;

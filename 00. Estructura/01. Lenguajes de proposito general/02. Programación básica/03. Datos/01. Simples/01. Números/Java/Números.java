@@ -21,6 +21,9 @@ public class TiposDeDatos {
         
         //Decimal doble de 8 bytes (Doble presicion)
         double vDouble = 123.456;
+
+        // Numero Vacio
+        NO SOPORTADO
         
     }
     
