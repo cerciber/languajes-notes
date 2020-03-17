@@ -1,0 +1,30 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-1.11.0.min.js"> </script>
+		<script> 
+		
+			var imagen = ["imagen 1.jpg", "imagen 2.jpg", "imagen 3.jpg"];
+			var valorImagen = 0;
+
+			$(document).ready(function(){
+				
+
+				var cambiarImagen = function(){
+
+					$("#imagen").attr("src",imagen[valorImagen]);
+					valorImagen++;
+					if(valorImagen == 3){valorImagen = 0;}
+
+				}
+
+				var intervalo = setInterval(cambiarImagen, 1000);
+
+			});
+
+		</script>
+	</head>
+<body>
+	<image src="" id="imagen">
+</body> 

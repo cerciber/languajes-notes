@@ -1,0 +1,27 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-1.11.0.min.js"> </script>
+		<script> 
+		
+			$(document).on('ready', function(){
+
+				/* Redimensionar la pantalla */
+				$(window).resize(function(){
+
+					var ancho = $(this).width();
+					var alto = $(this).height();
+
+					$("#parrafo1").text("Se ha redimensionado la pantalla a: " 
+						+ ancho + " x " + alto);
+
+				});
+
+			});
+
+		</script>
+	</head>
+<body>
+	<p id="parrafo1"></p>
+</body> 

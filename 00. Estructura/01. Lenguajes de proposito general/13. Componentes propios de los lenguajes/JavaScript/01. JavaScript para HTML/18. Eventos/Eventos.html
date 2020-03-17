@@ -1,0 +1,44 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript">
+
+			function cambiarTexto(id){
+
+				document.getElementById(id).innerHTML="Evento activado";
+
+			}
+
+		</script>
+	</head>
+
+<!-- onload = accion al terminar de cargar la pagina -->
+<body onload="cambiarTexto('parrafo6')">
+
+	<!-- onclick = accion al clickear -->
+	<p id="parrafo1" onclick="cambiarTexto('parrafo1')">Activar evento</p>
+
+	<!-- onclick = accion al cambiar -->
+	<select id="lista" onchange="cambiarTexto('parrafo2')">
+		<option value="Valor 1">Valor 1
+		<option value="Valor 2">Valor 2
+		<option value="Valor 3">Valor 3
+		<option value="Valor 4">Valor 4
+	</select>
+	<p id="parrafo2">Activar evento</p>
+
+	<!-- onmouseover = accion al pasar el mouse -->
+	<p id="parrafo3" onmouseover="cambiarTexto('parrafo3')">Activar evento</p>
+
+	<!-- onmouseout = accion al sacar el mouse del elemento -->
+	<p id="parrafo4" onmouseout="cambiarTexto('parrafo4')">Activar evento</p>
+
+	<!-- onkeydown = accion al pulsar una tecla del teclado -->
+	<p id="parrafo5" >Activar evento</p>
+	<input type="text" onkeydown="cambiarTexto('parrafo5')">
+
+	<!-- onload = accion al terminar de cargar la pagina -->
+	<p id="parrafo6">Activar evento</p>
+
+</body> 

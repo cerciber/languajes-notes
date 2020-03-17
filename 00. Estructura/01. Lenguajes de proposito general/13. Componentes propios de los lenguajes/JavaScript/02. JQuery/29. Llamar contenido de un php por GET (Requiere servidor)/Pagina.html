@@ -1,0 +1,27 @@
+<html> 
+	<head>
+		<title>tituo pagina</title>
+		<meta charset="UTF-8">
+		<script type="text/javascript" src="jquery-1.11.0.min.js"> </script>
+		<script> 
+		
+			$(document).on('ready', function(){
+
+				$.get("Codigo a obtener.php",{
+
+					parametro1: "valor1",
+					parametro2: "valor2"
+
+				}, function(datos){
+
+					$("#contenedor").html(datos);
+
+				});
+
+			});
+
+		</script>
+	</head>
+<body>
+	<div id="contenedor" ></div>
+</body> 
