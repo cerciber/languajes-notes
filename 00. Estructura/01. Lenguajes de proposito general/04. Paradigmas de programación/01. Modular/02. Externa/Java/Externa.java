@@ -11,7 +11,7 @@ public class Clase {
     public static void main(String[] args) {
 
         // Llamar objeto del modulo externo
-        Object objeto = new Object();
+        Clase objeto = new Clase();
 
     }
 

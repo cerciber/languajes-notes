@@ -1,6 +1,6 @@
 
 // Creación
-function  funcion() {
+function funcion() {
     // Contenido
 }
 

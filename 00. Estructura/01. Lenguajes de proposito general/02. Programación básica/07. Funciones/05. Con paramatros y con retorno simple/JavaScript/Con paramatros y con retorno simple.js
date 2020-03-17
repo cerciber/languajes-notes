@@ -11,6 +11,12 @@ function funcion(...variables) {
     return valor;
 }
 
+// Creación con parametros por defecto (Los valores por defecto de pueden omitir en el llamado)
+function funcion(var1 = val1, var2 = val2, varN = valN) {
+    // Contenido
+    return valor;
+}
+
 // Llamado
 /*Contexto*/ funcion(valor1, valor2, valorN) /*Contexto*/
 

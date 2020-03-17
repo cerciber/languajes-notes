@@ -15,6 +15,9 @@ public class Prueba {
         return new Object[]{valor1, valor2, valorN};
     }
 
+    // Creación con parametros por defecto (Los valores por defecto de pueden omitir en el llamado)
+    NO SOPORTADO
+
     public static void main(String[] args) {
         
         // Llamado

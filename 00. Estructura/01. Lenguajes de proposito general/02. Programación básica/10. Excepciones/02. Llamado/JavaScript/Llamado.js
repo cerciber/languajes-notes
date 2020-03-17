@@ -1,8 +1,8 @@
   
-// Llamar excepción sin mensaje y sin excepción de causa
+// Llamar excepción sin mensaje
 throw new MiExcepcion();
 
-// Llamar excepción con mensaje y sin excepción de causa
+// Llamar excepción con mensaje
 throw new MiExcepcion("mensaje");
 
         

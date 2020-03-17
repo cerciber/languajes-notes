@@ -11,10 +11,10 @@ public class Clase {
     public static void main(String[] args) {
 
         // Llamar un objeto del modulo en la misma carpeta
-        Object objeto = new Object();
+        Clase objeto = new Clase();
 
         // Llamar un objeto del modulo en otra carpeta
-        Object objeto = new Object();
+        Clase objeto = new Clase();
 
     }
 

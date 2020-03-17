@@ -1,15 +1,6 @@
-package Comentarios;
 
-public class Comentarios {
+// Comentario de una sola linea
 
-    public static void main(String[] args) {
-        
-        // Comentario de una sola linea
-
-        /* 
-        	Comentario de varias lineas 
-        */
-        
-    }
-    
-}
+/* 
+	Comentario de varias lineas 
+*/

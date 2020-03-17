@@ -14,11 +14,11 @@ booleano = decimal!=0?true:false;       // Decimal a Booleano
 cadena = decimal.toString();            // Decimal a String
 
 // Caracter
-entero = caracter.charCodeAt(0);        // Caracter a Entero
-decimal = caracter.charCodeAt(0);       // Caracter a Decimal
-caracter = caracter;                    // Caracter a Caracter
-booleano = (caracter != 0);             // Caracter a Booleano
-cadena = caracter;                      // Caracter a String
+entero = caracter.charCodeAt(0);        	// Caracter a Entero
+decimal = caracter.charCodeAt(0);       	// Caracter a Decimal
+caracter = caracter;                    	// Caracter a Caracter
+booleano = (caracter.charCodeAt(0) != 0);	// Caracter a Booleano
+cadena = caracter;                      	// Caracter a String
 
 // Booleano
 entero = booelano?1:0;                  // Booleano a Entero
