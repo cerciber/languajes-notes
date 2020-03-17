@@ -1,0 +1,33 @@
+/* CoolMenus 4 - default styles - do not edit */
+.clCMAbs{position:absolute; visibility:hidden; left:0; top:10}
+/* CoolMenus 4 - default styles - end */
+  
+/*Style for the background-bar*/
+.clBar{position:relative; width:10; height:10; background-color: transparent;layer-background-color:transparent; visibility:hidden}
+
+/*Styles for level 0*/
+.clLevel0,.clLevel0over{position:relative; padding:1px;font-size:12px; font-weight:bold;font-family: verdana,arial,helvetica;}
+
+/*
+.clLevel0{background-color: #FFDF00;layer-background-color:#FFDF00;padding: 1px;text-indent: 3px;border: 1px outset #FFDF00;color: #000000;}
+*/
+
+.clLevel0{background-color: #FBD34A;layer-background-color:#FBD34A;padding: 1px;text-indent: 3px;border: 1px outset #FBD34A;color: #641A13;}
+
+
+
+.clLevel0over{background-color: #D9C06C; layer-background-color: #D9C06C;padding: 1px;text-indent: 3px;border: 1px inset #FBD34A;color: #000000; cursor:pointer;cursor:hand; }
+.clLevel0border{position:absolute; visibility:hidden; background-color:transparent; layer-background-color:transparent}
+
+/*Styles for level 1*/ 
+.clLevel1, .clLevel1over{position:absolute; padding:2px;font-size:12px;font-weight:normal;font-family: verdana,arial,helvetica;}
+.clLevel1{background-color:#FFF78A; layer-background-color:#FFF78A;color:#000000;border: 1px #D3BF83 solid;}
+.clLevel1over{background-color:#191970; layer-background-color:#191970; color:#FFFF80; cursor:pointer; cursor:hand; }
+.clLevel1border{position:absolute; visibility:hidden; background-color:#DADCBA; layer-background-color:#006699;border: 1px #B4AF89 solid;}
+
+/*Styles for level 2*/
+.clLevel2, .clLevel2over{position:absolute; padding:2px;font-size:11px; font-weight:normal;font-family: verdana,arial,helvetica;}
+.clLevel2{background-color:ivory; layer-background-color:#E1E1C8; color:#000000;border: 1px #C5C0A3 solid;}
+.clLevel2over{background-color:#006699; layer-background-color:#006699; color:#FFFFFF; cursor:pointer; cursor:hand; }
+.clLevel2border{position:absolute; visibility:hidden; background-color:#DADCBA; layer-background-color:#006699}
+
