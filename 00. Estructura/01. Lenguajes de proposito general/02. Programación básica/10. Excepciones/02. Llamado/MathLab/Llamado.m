@@ -1,0 +1,5 @@
+  
+% Llamar excepción
+throw(MiExcepcion);
+
+    

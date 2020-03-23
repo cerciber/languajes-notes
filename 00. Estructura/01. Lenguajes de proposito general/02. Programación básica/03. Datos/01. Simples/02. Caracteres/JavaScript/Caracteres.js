@@ -1,7 +1,7 @@
 
 // Caracter
-variable = 'c';		// Forma 1
-variable = "c";		// Forma 2
+variable = 'c';		// % Arreglo char
+variable = "c";		// % Arreglo string
 
 // Caracter Vacio
-variable = undefined;
+variable = [];		// Arreglo double

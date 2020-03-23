@@ -1,7 +1,9 @@
 
-# valor verdadero o falso;
-booleano1 = True;   # valor verdadero (Equivale a 1)
-booleano2 = False;  # valor falso (Equivale a 0)
+# valor verdadero
+booleano1 = True;   # Equivale a 1
+
+# valor falso
+booleano2 = False;  # Equivale a 0
     
 # Booleano nulo
 nulo = None

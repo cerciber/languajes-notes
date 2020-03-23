@@ -1,6 +1,6 @@
 
 # Estandar 
-if condicion
+if condicion:
     # Contenido verdadero
 else:
 	# Contenido falso
