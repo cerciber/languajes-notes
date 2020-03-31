@@ -1,2 +1,0 @@
-#Para enviar estos cambios a tu repositorio remoto ejecuta 
-git push origin master

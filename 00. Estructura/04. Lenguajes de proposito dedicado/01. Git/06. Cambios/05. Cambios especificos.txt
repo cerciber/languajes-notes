@@ -1,0 +1,7 @@
+
+# Copiar commits sobre la ubicación actual (No puede ser ancestro del actual)
+git cherry-pick referencia1 referencia2 referenciaN
+
+# Rehacer commmits de la ubicación actual desde la referencia especificada cambiando el orden y/o omitiendo commits (Se genera una interfaz para ello)
+git rebase -i referencia
+

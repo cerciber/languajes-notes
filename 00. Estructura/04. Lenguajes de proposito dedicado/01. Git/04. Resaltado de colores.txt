@@ -1,3 +1,0 @@
-# Resaltar colores en la consola
-git config --global color.status auto
-git config --global color.branch auto

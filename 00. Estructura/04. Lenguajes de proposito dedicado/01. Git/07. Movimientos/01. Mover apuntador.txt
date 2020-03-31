@@ -1,0 +1,28 @@
+
+# Cambiar al ultimo commit de la rama especificada
+git checkout rama
+
+# Cambiar al commit especificado (Segun su identificador hash)
+# - Admite que no se ingrese todo el identificador desde que el comienzo sea unico
+git checkout hashCommit
+
+# Cambiar al commit anterior del actual
+git checkout HEAD^
+
+# Cambiar al commit anterior anterior del actual
+git checkout HEAD^^
+
+# Cambiar al commit anterior en el padre n del actual
+git checkout HEAD^n
+
+# Cambiar al n-esimo commit anterior del actual
+git checkout HEAD~n
+
+# Cambiar al commit anterior de la referencia especificada
+git checkout referencia^
+
+# Cambiar al commit anterior anterior de la referencia especificada
+git checkout referencia^^
+
+# Cambiar al n-esimo commit anterior de la referencia especificada
+git checkout referencia~<n>

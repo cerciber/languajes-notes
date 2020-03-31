@@ -1,0 +1,3 @@
+
+# Comentar cambios (Crea un apuntador al estado actual del proyecto)
+git commit "mensaje"

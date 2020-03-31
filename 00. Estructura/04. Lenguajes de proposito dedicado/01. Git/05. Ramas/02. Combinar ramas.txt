@@ -1,0 +1,15 @@
+
+# Mezclar rama especificada en la rama actual (Las ramas quedan simultaneamente en la historia)
+git merge rama
+
+# Rebasar rama actual sobre la rama especificada (Las ramas quedan secuencialmente en la historia)
+git rebase rama
+
+# Rebasar rama actual sobre la rama especificada realizando omiciones y cambios (Las ramas quedan secuencialmente en la historia)
+git rebase -i rama
+
+# Rebasar rama2 sobre la rama1 (Las ramas quedan secuencialmente en la historia)
+git rebase rama1 rama2
+
+# Rebasar rama actual sobre la rama especificada realizando omiciones y cambios (Las ramas quedan secuencialmente en la historia)
+git rebase -i rama

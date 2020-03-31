@@ -1,0 +1,6 @@
+
+# Crear una rama que apunte a otra rama del repositorio remoto (Se enlazan en el pull y el push)
+git checkout -b rama1 origin/rama2	
+
+# Apuntar una rama local a una remota (Se enlazan en el pull y el push)
+git branch -u origin/rama2 rama1

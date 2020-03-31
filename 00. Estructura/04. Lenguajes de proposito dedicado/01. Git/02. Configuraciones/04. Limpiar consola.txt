@@ -1,0 +1,3 @@
+
+# limpiar la consola
+clear

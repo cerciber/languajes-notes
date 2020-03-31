@@ -1,0 +1,4 @@
+
+# Listar las configuraciones realizadas
+git config --global --list 
+

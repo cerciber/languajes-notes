@@ -1,0 +1,3 @@
+
+# Mover la rama especificada a la referencia especificada
+git branch -f rama referencia

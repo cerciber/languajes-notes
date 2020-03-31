@@ -1,0 +1,64 @@
+
+# Traer cambios del repositorio remoto al local (No actualiza el estado local)
+git fetch
+
+# Traer cambios a la rama del respositorio local del remoto especificado
+git fetch nombreRemoto rama
+
+# Traer cambios a la referencia local de la referencia remota del repositorio remoto especificado
+git fetch nombreRemoto referenciaRemota:referenciaLocal
+
+# Traer cambios a una nueva rama local de la referencia remota del repositorio remoto especificado
+git fetch nombreRemoto referenciaRemota:nuevaRamaLocal
+
+# Crear rama local
+git fetch nombreRemoto :ramaLocal
+
+# Traer cambios del repositorio remoto al local y actualizar el estado local (Las ramas quedan secuencialemente en la historia)
+git pull
+
+# Traer cambios del repositorio remoto al local y actualizar el estado local (Las ramas quedan simultaneamente en la historia)
+git pull --rebase
+
+# Traer cambios a la rama del respositorio local del remoto especificado y actualizar el estado local
+git pull nombreRemoto rama
+
+# Traer cambios a la referencia local de la referencia remota del repositorio remoto especificado y actualizar el estado local
+git pull nombreRemoto referenciaRemota:referenciaLocal
+
+# Traer cambios a una nueva rama local de la referencia remota del repositorio remoto especificado y actualizar el estado local
+git pull nombreRemoto referenciaRemota:nuevaRamaLocal
+
+# Crear rama local
+git pull nombreRemoto :ramaLocal
+
+# Subir cambios del respositorio local al remoto
+git push
+
+# Subir cambios de la rama del respositorio local al remoto especificado
+git push nombreRemoto rama
+
+# Subir cambios de la referencia local a la referencia remota del repositorio remoto especificado
+git push nombreRemoto referenciaLocal:referenciaRemota
+
+# Subir cambios de la referencia local a una nueva referencia remota del repositorio remoto especificado
+git push nombreRemoto referenciaLocal:nuevaRamaRemota
+
+# Borrar rama del repositorio remoto especificado
+git push nombreRemoto :ramaRemota
+
+# Subir cambios con un repositorio desactualziado  (Las ramas quedan simultaneamente en la historia)
+git fetch; git rebase origin/master; git push	# Forma1
+git pull --rebase; git push						# Forma2
+
+# Subir cambios con un repositorio desactualziado  (Las ramas quedan secuencialemente en la historia)
+git fetch; git merge origin/master; git push	# Forma 1
+git pull; git push								# Forma 2
+
+
+
+
+
+
+git fakeTeamwork 3
+git fakeTeamwork rama 3

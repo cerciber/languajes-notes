@@ -2,7 +2,7 @@
 :: Ir a la dirección donde guardar el proyecto
 pushd dirección 
 
-:: Installar plantilla de React.js
+:: Installar plantilla de React.js (El nombre debe estar en minusculas)
 npx create-react-app nombre_proyecto
 
 :: Ingresar a la carpeta del proyecto

@@ -1,2 +1,0 @@
-# Muestra el log (un historial)
-git log

@@ -1,0 +1,14 @@
+# Navegar hasta el home
+cd ~/
+
+# Listar archivos en una carpeta
+ls -la	
+
+# Entrar en una carpeta o archivo
+cd 'nombre de la carpeta o archivo'
+
+# Retroceder una carpeta
+cd ..
+
+# Ir a la carpeta especificada
+cd "Dirección"

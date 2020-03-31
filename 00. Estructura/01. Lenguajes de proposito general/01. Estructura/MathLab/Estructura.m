@@ -1,4 +1,6 @@
 
+% El nombre del archivo no debe contener espacios
+
 % Sentencias
 SENTENCIA1
 SENTENCIA2

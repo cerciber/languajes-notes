@@ -1,2 +1,0 @@
-# Configurar para que todos los cambios generen un push por defecto
-git config --global push.default "matching"

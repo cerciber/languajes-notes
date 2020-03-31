@@ -1,0 +1,6 @@
+
+# Crear una etiqueta en un commit (Es accesible pero no modificable)
+git tag nombreEtiqueta referencia
+
+# Obtener una descripción de la ubicación con la estructura <etiquetaMasCercana>_<commitsDeDistancia>_g<referenciaHash>
+git describe referencia

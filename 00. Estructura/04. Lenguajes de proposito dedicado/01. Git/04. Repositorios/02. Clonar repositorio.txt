@@ -1,0 +1,6 @@
+
+# Crear una copia local de un repositorio local
+git clone 'direccion local'
+
+# Crear una copia local un repositorio remoto (la ramas remotas se acceden como origin/rama)
+git clone username@host:/path/to/repository

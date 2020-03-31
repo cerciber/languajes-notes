@@ -1,0 +1,6 @@
+
+# Revertir cambios locales en la rama actual hasta la referencia especificadan (Borra la historia)
+git reset referencia
+
+# Revertir cambios remotos en la rama actual hasta la referencia especificada (Conserva la historia)
+git revert referencia

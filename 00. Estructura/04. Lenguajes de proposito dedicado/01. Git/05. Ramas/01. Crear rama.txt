@@ -1,0 +1,7 @@
+
+# Crear rama en la ubicación actual (la rama principal se llama master)
+git branch nombre
+
+# Crear rama en la referencia especificada (la rama principal se llama master)
+git branch nombre referencia
+

@@ -1,5 +1,0 @@
-# Crear una copia local de un repositorio
-git clone 'direccion local'
-
-# Crear una copia local un repositorio alojado en un servidor
-git clone username@host:/path/to/repository

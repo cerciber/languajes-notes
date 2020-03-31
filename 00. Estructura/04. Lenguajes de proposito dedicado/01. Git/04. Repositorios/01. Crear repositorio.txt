@@ -1,0 +1,3 @@
+
+# Inicializamos el repositorio local Git
+git init
