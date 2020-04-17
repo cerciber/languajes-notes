@@ -4,11 +4,11 @@ axios = require('axios')
 
 // Realizar petición POST
 axios.post(direcciónServidor, 			// Envío
-	objeto 								// Enviar objeto
+	objeto 								// Enviar datos
 )
 .then((res) => {						// Respuesta
 	// Contenido
-	res.data;							// Obtener objeto
+	res.data;							// Obtener datos
 	// Contenido
 })
 .catch((error) => {						// Recibir fallo de respuesta

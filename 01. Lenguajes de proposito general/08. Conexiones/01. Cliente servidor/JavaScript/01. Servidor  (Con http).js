@@ -10,10 +10,10 @@ function onRequest(request, response) {
     	// Obtener petición post
 	    request.on('data', function(data) {
 	    	// Contenido
-			objeto = JSON.parse(data); 									// Obtener objeto recibido
-			response.writeHead(200, {'Content-Type': 'text/html'});     // Encabezado de respuesta a un requisito (codigo de estado, {'Content-Type': 'tipo de contenido'})
-			response.write(JSON.stringify(objeto2));					// Responder con objeto
-			response.end();  											// Finalizar
+			objeto = JSON.parse(data); 										// Obtener objeto recibido
+			response.writeHead(n_estado, {'Content-Type': 'text/html'});	// Encabezado de respuesta a un requisito (codigo de estado, {'Content-Type': 'tipo de contenido'})
+			response.write(JSON.stringify(objeto2));						// Responder con objeto
+			response.end();  												// Finalizar
 			// Contenido
 		})
 	    // Contenido
