@@ -20,3 +20,7 @@ npm install
 :::::::::::::::::::::::::::::::::::::::::::::::::::::::: GENERAR EJECUTABLE
 
 npm run build
+
+:::::::::::::::::::::::::::::::::::::::::::::::::::::::: GENERAR EJECUTABLE REMOTO
+
+npm run deploy
