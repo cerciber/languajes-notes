@@ -7,6 +7,3 @@ git push origin rama
 
 # Enviar cambios a la rama remota de la rama actual
 git push
-
-# Hacer una petición de cambio (Pull request)
-git push -u pr
