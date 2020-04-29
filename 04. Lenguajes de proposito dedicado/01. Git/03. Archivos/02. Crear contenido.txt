@@ -7,5 +7,5 @@ cd 'nombre carpeta'
 # Crea archivo
 touch 'nombre archivo'
 
-# Escribir en un archivo
-echo "Hola Mundo" > 'nombre archivo'
+# Escribir en un archivo (Crea el archivo si no existe)
+echo 'Hola Mundo' > 'nombre archivo'

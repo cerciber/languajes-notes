@@ -1,0 +1,3 @@
+
+# Borrar rama
+git branch -d nombre

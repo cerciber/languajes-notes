@@ -1,6 +1,16 @@
 
 # Revertir cambios locales en la rama actual hasta la referencia especificadan (Borra la historia)
-git reset referencia
+git reset --hard referencia
 
 # Revertir cambios remotos en la rama actual hasta la referencia especificada (Conserva la historia)
-git revert referencia
+git revert --hard referencia
+
+# Revertir cambios sin añadir
+git clean -fd; git checkout .
+
+# Revertir cambios añadidos
+git reset --hard
+
+# Revertir ultimo commit
+git reset --hard HEAD^
+
