@@ -1,0 +1,3 @@
+# id_contenedor:  Id del contenedor (Se puede ver con "docker container ls")
+
+docker stop id_contenedor

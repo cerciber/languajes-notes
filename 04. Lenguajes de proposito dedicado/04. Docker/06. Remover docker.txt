@@ -1,0 +1,6 @@
+# id_de_imagen:  Id de la imagen construida (Se puede ver con "docker images")
+
+docker container rm id_de_imagen
+
+# Borrar culaquier recurso que no esté asosciado a un contenedor
+docker system prune

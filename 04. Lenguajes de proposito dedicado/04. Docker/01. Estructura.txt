@@ -1,0 +1,20 @@
+- Crear un archivo llamado "Dockerfile" en la raíz del proyecto
+- El contendio debe tener la siguiente configuración
+
+# Imagen que se usará como contenedor
+FROM <imagen base>
+
+# Comandos linux a aplicar en el contenedor
+RUN <comando linux>
+
+# Dirección destino del proyecto en el contenedor
+WORKDIR <direccion local del proyecto>
+
+# Copiar contenido (El punto (.) significa ruta raíz del proyecto)
+COPY <dirección relativa origen> <dirección relativa destino>
+
+# Puerto que será expuesto en tiempo de ejecución
+EXPOSE 3000
+
+# Comando para iniciar la aplicación (cada elemento del comando separado en una lista)
+CMD [ "node", "server.js" ]

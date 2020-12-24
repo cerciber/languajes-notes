@@ -1,0 +1,6 @@
+# -p: Publica todos los puertos expuestos a las interfaces de host
+# puesto_host: Puesto del host de la maquina en la que se corre el docker
+# puesto_expuesto: Puesto expuesto del docker del proyecto
+# id_de_imagen:  Id de la imagen construida (Se puede ver con "docker images")
+
+docker run -p puesto_host:puesto_expuesto id_de_imagen

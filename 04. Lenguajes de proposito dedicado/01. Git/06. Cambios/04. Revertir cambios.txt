@@ -14,3 +14,5 @@ git reset --hard
 # Revertir ultimo commit
 git reset --hard HEAD^
 
+# Borrar ultimo commit sin perder cambios
+git reset --soft HEAD^
