@@ -1,10 +1,104 @@
-<html> <!-- Comienxo del documento html -->
-	<head> <!-- Propiedades de la pagina -->
-		<title>tituo pagina</title> <!-- titulo -->
+<!DOCTYPE html> <!-- Notificar que se está usando HTML5 -->
+<html lang="es"> <!-- Comienxo del documento html, lang: Lenguaje, "es":Español -->
+	<head> <!-- Propiedades de la pagina, elementos no visibles si no configurativos -->
+		<!-- titulo -->
+		<title>tituo pagina</title> 
 		<!-- tipo de conjunto de caracteres -->
-		<meta charset="UTF-8">
+		<meta charset="UTF-8"/>
+		<!-- Descripción de la página para SEO, content: texto de la descripción -->
+		<meta name="description" content="Text content of description"/>
+		<!-- Permitir a los bots de los exploradores que ayuden a posicionar la pagina -->
+		<meta name="robots" content="index, follow"/>
+		<!-- Permitir adaptabilidad para dispositivos moviles, permite que en los moviles los elementos se ven mas grandes -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<!-- Incluir archivo CSS, href: ubicación del css -->
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body> <!-- Cuerpo -->
-		<p>Hola mundo</p> <!-- contenido de la pagina -->
+		<!-- Encabezado -->
+		<header> 
+			<nav> <!-- Barra de navegación -->
+				<ul> <!-- Lista desordenada -->
+					<li>inicio</li>
+					<li>misión</li>
+					<li>contacto</li> <!-- elemento de la lista -->
+				</ul>
+			</nav>
+		</header>
+		<!-- Contenido principal o central -->
+		<main> 
+			<section> <!-- Secciones de la página -->
+				
+				<article> <!-- Artículos -->
+				</article>
+
+				<ul> <!-- Lista desordenada -->
+					<li></li> <!-- elemento de la lista -->
+				</ul>
+
+				<ol> <!-- Lista ordenada -->
+					<li></li> <!-- elemento de la lista -->
+				</ol>
+
+				<p> <!-- Parrafo -->
+				</p>
+
+				<h1> <!-- Titulo principal -->
+				</h1>
+				<h2> <!-- Titulo segundario -->
+				</h2>
+				<h3> <!-- Titulo de tecer grado -->
+				</h3>
+				<h4> <!-- Titulo de cuarto grado -->
+				</h4>
+				<h5> <!-- Titulo de quinto grado -->
+				</h6>
+				<h6> <!-- Titulo de sexto grado -->
+				</h6>
+
+				<a href="link"> Texto del link</a> <!-- Link a otro lugar-->
+
+				<table> <!-- Tabla-->
+					<tr> <!-- Fila1 -->
+					  <th>Campo titular 1</th>
+					  <th>Campo titular 2</th>
+					  <th>Campo titular 3</th>
+					</tr>
+					<tr> <!-- Fila2 -->
+					  <td>Campo de contenido 1 en la fila 2</td>
+					  <td>Campo de contenido 2 en la fila 2</td>
+					  <td>Campo de contenido 3 en la fila 2</td>
+					</tr>
+					<tr> <!-- Fila3 -->
+						<td>Campo de contenido 1 en la fila 3</td>
+						<td>Campo de contenido 2 en la fila 3</td>
+						<td>Campo de contenido 3 en la fila 3</td>
+					</tr>
+				</table>
+
+				<div> <!-- Divición para organizar el contenido. Solo usar cuando ningun otro elemento de la semantica HTML funcione -->
+				</div>
+
+				<small>Texto</small> <!-- Texto reducido -->
+
+				<strong>Texto</strong> <!-- Texto en negrita -->
+
+				<!-- Imagen -->
+				<img src="dirección de la imagen" alt="Texto alternativo" width="ancho" height="alto">  
+
+				<figure> <!-- Figura: Imagen con texto -->
+					<img src="dirección de la imagen"
+						 alt="Texto alternativo">
+					<figcaption>Texto</figcaption>
+				</figure>
+					
+
+			</section>
+		</main>
+		<aside> <!-- Barra lateral -->
+		</aside>
+		<footer> <!-- Pie de página -->
+
+		</footer>
 	</body> 
 </html> <!-- Final del documento html -->
