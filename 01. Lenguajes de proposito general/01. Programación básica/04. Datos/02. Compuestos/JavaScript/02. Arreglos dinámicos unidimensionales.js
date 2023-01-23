@@ -1,6 +1,6 @@
 
 // Instanciación
-NO SOPORTADO
+//NO SOPORTADO
 
 // Instanciación y asignación
 arreglo = [val1, val2, valN];                   // Por posición

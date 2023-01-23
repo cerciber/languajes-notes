@@ -1,6 +1,6 @@
 
 // Instanciación
-NO SOPORTADO
+//NO SOPORTADO
 
 // Instanciación y asignación
 arreglo = [[val11, val21, valN1],                       // Por posición
