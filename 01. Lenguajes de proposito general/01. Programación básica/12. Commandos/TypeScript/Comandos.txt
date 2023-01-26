@@ -1,0 +1,27 @@
+
+// instalar Typescript localemente
+npm install typescript --save-dev
+
+// Ver vesrión del Typescript
+npx tsc --version
+
+// Inicializar archivo de configuración de Typescript (activa el modo estricto por defecto)
+npx tsc --init
+
+// Compilar TypeScript a Javascript (ruta_relativa: src/someting)
+npx tsc ruta_relativa
+
+// Compilar TypeScript a Javascript forzando ES5
+npx tsc ruta_relativa --target es5
+
+// Compilar TypeScript a Javascript forzando ES6
+npx tsc ruta_relativa --target es6
+
+// Compilar TypeScript a Javascript en una ruta específica
+npx tsc ruta_relativa_entrada --outDir ruta_relativa_salida
+
+// Compilar todos los archivos TypeScript a Javascript de la carpeta especificada (ruta_relativa: src/someting)
+npx tsc ruta_relativa/*.ts
+
+// Compilar de forma reactiva (ctr + C para salir)
+npx tsc --watch

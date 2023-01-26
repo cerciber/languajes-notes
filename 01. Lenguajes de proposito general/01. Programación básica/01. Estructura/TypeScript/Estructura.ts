@@ -1,0 +1,7 @@
+
+// Sentencias
+/*
+SENTENCIA1;
+SENTENCIA2;
+SENTENCIAN;
+*/
