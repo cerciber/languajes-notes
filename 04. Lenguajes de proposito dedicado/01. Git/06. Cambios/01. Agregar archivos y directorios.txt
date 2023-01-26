@@ -4,3 +4,8 @@ git add .
 
 # O agregamos un archivo al repositorio
 git add 'nombre del archivo o carpeta'
+
+# Ver archivos añadidos y no añadidos
+git status
+
+
