@@ -14,5 +14,3 @@ git push
 # Revertir cambio subido
 git reset referencia_commit
 git push
-
-test
