@@ -1,4 +1,7 @@
 
+# Enviar cambios al origin de la rama actual
+git push
+
 # Enviar cambios al master
 git push origin master
 
