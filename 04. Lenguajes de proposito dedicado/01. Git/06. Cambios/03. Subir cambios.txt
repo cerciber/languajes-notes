@@ -12,6 +12,6 @@ git push origin rama
 git push
 
 # Revertir cambio subido
-git log (Para ver la referencia de los commits)
-git revert referencia_commit
+git log (Para ver la referencia de los commits) (q: para salir de la vista)
+git revert referencia_commit (E: para sobreescribir si hay conflictos) (:qa para salir del mensaje)
 git push
