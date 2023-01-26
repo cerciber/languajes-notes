@@ -54,11 +54,3 @@ git pull --rebase; git push						# Forma2
 # Subir cambios con un repositorio desactualziado  (Las ramas quedan secuencialemente en la historia)
 git fetch; git merge origin/master; git push	# Forma 1
 git pull; git push								# Forma 2
-
-
-
-
-
-
-git fakeTeamwork 3
-git fakeTeamwork rama 3
