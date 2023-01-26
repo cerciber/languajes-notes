@@ -5,5 +5,5 @@ git commit -m "mensaje"
 # Ver si los commits están al dia con el origen
 git status
 
-# Deshacer cambio local comentado
-git reset HEAD~1
+# Deshacer cambio local comentado conservando los cambios (Deben volverse a agregar las modificaciones)
+git reset HEAD^
