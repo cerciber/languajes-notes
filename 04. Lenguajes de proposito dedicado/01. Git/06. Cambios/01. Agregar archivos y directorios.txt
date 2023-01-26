@@ -13,5 +13,3 @@ git reset .
 
 # Descartar cambios agregados y borrarlos
 git restore .
-
-test
