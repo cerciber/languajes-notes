@@ -1,0 +1,3 @@
+
+# Almacenar las crecenciales en chache para que solo se deba ingresarlas una vez.
+git config --global credential.helper manager-core

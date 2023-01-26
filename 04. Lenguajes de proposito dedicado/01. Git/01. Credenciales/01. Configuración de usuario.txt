@@ -1,6 +1,0 @@
-
-# Configurar o cambiar usuario
-git config --global user.name "cerciber"
-
-# Ver usuario configurado
-git config --global user.name

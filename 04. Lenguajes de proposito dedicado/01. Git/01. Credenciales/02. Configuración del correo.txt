@@ -1,6 +1,0 @@
-
-# Configurar o cambiar correo
-git config --global user.email "ceatorresar@unal.edu.co"
-
-# Ver correo configurado
-git config --global user.email
