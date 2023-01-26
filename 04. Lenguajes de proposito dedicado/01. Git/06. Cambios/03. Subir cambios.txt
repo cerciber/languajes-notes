@@ -12,5 +12,5 @@ git push origin rama
 git push
 
 # Revertir cambio subido
-git reset referencia_commit
+git reverb referencia_commit
 git push
