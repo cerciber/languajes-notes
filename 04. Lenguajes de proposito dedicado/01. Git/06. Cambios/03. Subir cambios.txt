@@ -10,3 +10,9 @@ git push origin rama
 
 # Enviar cambios a la rama remota de la rama actual
 git push
+
+# Deshacer cambio subido conservando los cambios (Deben volverse a agregar las modificaciones)
+git reset HEAD^
+
+# Deshacer cambio subido borrando los cambios
+git reset --hard HEAD^
