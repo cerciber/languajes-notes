@@ -8,5 +8,9 @@ git add 'nombre del archivo o carpeta'
 # Ver archivos añadidos y no añadidos
 git status
 
+# Descartar cambios agregados sin borrarlos
+git reset .
+
 # Descartar cambios agregados y borrarlos
 git restore .
+
