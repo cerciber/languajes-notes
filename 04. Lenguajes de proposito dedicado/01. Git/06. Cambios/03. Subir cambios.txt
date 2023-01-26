@@ -13,7 +13,5 @@ git push
 
 # Revertir cambio subido
 git log (Para ver la referencia de los commits)
-git reverb referencia_commit
+git revert referencia_commit
 git push
-
-test
