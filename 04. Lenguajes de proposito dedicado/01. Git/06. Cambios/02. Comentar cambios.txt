@@ -7,3 +7,5 @@ git status
 
 # Deshacer cambio local comentado conservando los cambios (Deben volverse a agregar las modificaciones)
 git reset HEAD^
+
+test
