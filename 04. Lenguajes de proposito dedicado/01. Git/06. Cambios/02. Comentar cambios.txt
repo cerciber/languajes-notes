@@ -1,3 +1,9 @@
 
 # Comentar cambios (Crea un apuntador al estado actual del proyecto)
 git commit -m "mensaje"
+
+# Ver si los commits están al dia con el origen
+git status
+
+# Deshacer cambio local comentado
+git reset HEAD~1
