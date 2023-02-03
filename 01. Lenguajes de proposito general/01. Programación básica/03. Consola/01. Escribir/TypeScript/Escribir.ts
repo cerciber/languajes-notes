@@ -1,3 +1,8 @@
+(() => {
 
-// Escribir en consola
-console.log("texto");
+    // Escribir en consola
+    console.log("texto");
+    
+})()
+
+
