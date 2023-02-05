@@ -58,29 +58,3 @@ class Componente extends React.Component {
 		}));
 	}
 }
-
-// Componente de clase con ciclo de vida
-// - props son de solo lectura
-class Componente extends React.Component {
-
-	// Constructor
-	constructor(props) {
-	    // Contenido
-	}
-
-	// Acciones justo despues de renderizar
-	componentDidMount() {
-		// Contenido
-	}
-
-	// Acciones justo antes de desmontar o destruir 
-	componentWillUnmount() {
-	}
-
-	// Elemento a renderizar
-	render() {
-		return elemento;
-	}
-
-}
-

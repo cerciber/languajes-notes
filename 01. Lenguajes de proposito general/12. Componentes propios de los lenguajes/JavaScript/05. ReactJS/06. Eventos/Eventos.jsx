@@ -3,9 +3,7 @@
 function Componente() {
 	
 	// Evento
-	function evento(e) {
-		// Contendido
-		e.preventDefault();	// Anular comportamiento por defecto
+	const evento = () => {
 		// Contendido
 	}
 

@@ -6,7 +6,7 @@ import React from 'react';      // React
 // Función de contenido del componente base
 function App() {
   return (
-    <div> <!-- Contendio de la forma HTML --> </div>
+    <div> {/*Contendio de la forma HTML*/} </div>
   );
 }
 
