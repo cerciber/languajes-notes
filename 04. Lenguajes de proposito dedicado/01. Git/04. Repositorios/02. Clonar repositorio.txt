@@ -4,3 +4,6 @@ git clone 'direccion local'
 
 # Crear una copia local un repositorio remoto (la ramas remotas se acceden como origin/rama)
 git clone 'direccion remota'
+
+# Clonar repo privado
+git clone https://<pat>@github.com/<your account or organization>/<repo>.git
