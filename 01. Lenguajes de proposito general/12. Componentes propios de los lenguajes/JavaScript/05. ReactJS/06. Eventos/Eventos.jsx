@@ -1,5 +1,5 @@
 
-// Eventos funcionales
+// Eventos funcionales sin parametros
 function Componente() {
 	
 	// Evento
@@ -10,6 +10,21 @@ function Componente() {
 	// Elemento a renderizar que usa el evento
 	return (
 		<etiqueta eventoHTML={evento}> </etiqueta>
+	);
+
+}
+
+// Eventos funcionales con parametros
+function Componente() {
+	
+	// Evento
+	const evento = (param1, param2, paramN) => {
+		// Contendido
+	}
+
+	// Elemento a renderizar que usa el evento
+	return (
+		<etiqueta eventoHTML={() => evento(value1, value2, valueN)}> </etiqueta>
 	);
 
 }
