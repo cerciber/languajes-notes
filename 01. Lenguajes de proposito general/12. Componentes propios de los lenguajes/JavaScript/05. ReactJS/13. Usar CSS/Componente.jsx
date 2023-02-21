@@ -3,7 +3,7 @@ import React from 'react';
 // Estilos que se aplicarán a todos los elementos con clase del componente
 import './Boton.css';
 
-function Boton(props) {
+function Componente(props) {
 
   // Estilos personalizados dinámicos (Los nombres de las propiedades de los estilos se escriben con el estandar Camel Case)
   const estilosPersonalizados = { backgroundColor: props.color }
@@ -15,4 +15,4 @@ function Boton(props) {
   );
 }
 
-export default Boton;
+export default Componente;
