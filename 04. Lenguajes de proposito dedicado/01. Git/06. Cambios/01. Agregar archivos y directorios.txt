@@ -11,5 +11,5 @@ git status
 # Descartar cambios agregados sin borrarlos
 git reset .
 
-# Descartar cambios agregados y borrarlos
+# Descartar cambios agregados o no agregados y borrarlos
 git restore .
