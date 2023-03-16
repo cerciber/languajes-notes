@@ -3,7 +3,8 @@ const bcrypt = require('bcrypt');
 
 
 // Generar un hash de la contraseña
-bcrypt.hash('contraseña', 10, (err, hash) => {
+const hashRounds = 10; // Numero de rondas de hashing (Entre mas grande mas seguro pero mas lento, recomendado 10)
+bcrypt.hash('contraseña', hashRounds, (err, hash) => {
 
   // Verificar si hubo algun error
   if (err) {
@@ -23,6 +24,6 @@ bcrypt.hash('contraseña', 10, (err, hash) => {
 
     // Imprimir si la contraseña coincide con el hash
     console.log('Coincide:', result);
-    
+
   });
 });
