@@ -6,6 +6,9 @@ const express = require('express'); // Express
 // Usar express
 const app = express();
 
+// Middleware para aceptar peticiones Json
+app.use(express.json());
+
 // Ruta para crear un token JWT y enviarlo al cliente
 app.get('/crear-token', (req, res) => {
 
@@ -32,7 +35,7 @@ app.get('/crear-token', (req, res) => {
 app.get('/verificar-token', (req, res) => {
 
   // Obetener token
-  const token = 'Token creado';
+  const token = req.body.token;
 
   // Llave por medio de la cual se puede verificar el token
   const secretKey = 'claveSecreta';
