@@ -9,44 +9,42 @@ const LocalStrategy = require('passport-local').Strategy; // Estategia de passpo
 // Iniciar express
 const app = express();
 
+// Validador de prueba para la auntenticación
+let autenticated = false;
+
 // Middleware de Passport para autenticar
 passport.use(new LocalStrategy(
   function(username, password, done) {
     // Aquí podrías hacer una consulta a una base de datos o validar la autenticación de otra manera
     if (username === 'usuario' && password === 'contraseña') {
-      return done(null, { username: username });
+        autenticated = true;
+        return done(null, { username: username });
     } else {
-      return done(null, false);
+        return done(null, false);
     }
   }
 ));
 
-passport.serializeUser(function(user, done) {
-  done(null, user);
-});
-
-passport.deserializeUser(function(user, done) {
-  done(null, user);
-});
-
 // Middleware para proteger rutas que requieren autenticación
 function protegerRuta(req, res, next) {
-  if (req.isAuthenticated()) {
-    return next();
-  } else {
-    res.status(401).send('No estás autenticado');
-  }
+    // Si está autenticado, continuar con la petición
+    if (autenticated) {
+        return next();
+
+    // De lo contrario responder que no está autenticado
+    } else {
+        res.status(401).send('No estás autenticado');
+    }
 }
 
-// Configuración de Express
+// Middleware para aceptar peticiones Json
 app.use(express.json());
-app.use(express.urlencoded({ extended: false }));
 
 // Inicialización de Passport y configuración de las rutas
 app.use(passport.initialize());
 
-// Ruta para autenticar
-app.post('/login', passport.authenticate('local'), function(req, res) {
+// Ruta para autenticar (Pasa por el middelware de autenticación,  {session: false} es para no manejar sesiones)
+app.post('/login', passport.authenticate('local', { session: false }), function(req, res) {
   res.send('Bienvenido, ' + req.user.username + '!');
 });
 
